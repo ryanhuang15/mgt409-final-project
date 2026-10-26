@@ -65,3 +65,17 @@ out a private original final-project repository. No replacement repository was
 initialized, no history was overwritten, and nothing was published. The report
 and slides state this limitation instead of inventing a GitHub URL. A verified
 repository link is still required before these HTML files are submission-ready.
+
+## GitHub publication completion
+
+After authenticated verification as `ryanhuang15`, the account’s repository list
+contained no matching MGT 409 final-project repository; the separate HW5 project
+was left untouched. A final pre-publication scan of 147 UTF-8 text files found
+no credentials, key/token patterns, private keys, personal contact details, local
+user paths, or unexpected `.env` files. `.env`, environments, caches, build output,
+and runtime data are excluded by `.gitignore`. The initial public repository was
+created at <https://github.com/ryanhuang15/mgt409-final-project> with the project
+source, synthetic datasets, tests, documentation, evaluation records, report,
+slides, and reproducibility instructions. The exact repository URL was then
+added to both HTML deliverables and pushed in a follow-up commit. Both files were
+rendered locally again; no paid API evaluations were run.
