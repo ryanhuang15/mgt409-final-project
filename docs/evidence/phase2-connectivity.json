@@ -1,0 +1,447 @@
+{
+  "model": "gpt-6-luna",
+  "reasoning_effort": "none",
+  "connectivity": true,
+  "native_tool_calling": true,
+  "strict_structured_output": true,
+  "usage": {
+    "total_model_calls": 3,
+    "successful_responses": 3,
+    "model_latency_ms": 3447.092,
+    "input_tokens": 291,
+    "reported_input_tokens_subtotal": 291,
+    "cached_input_tokens": 0,
+    "reported_cached_input_tokens_subtotal": 0,
+    "output_tokens": 32,
+    "reported_output_tokens_subtotal": 32,
+    "total_tokens": 323,
+    "reported_total_tokens_subtotal": 323,
+    "usage_complete": true,
+    "exact_billed_cost_usd": null,
+    "estimated_cost_usd": null,
+    "cost_note": "Token measurements only; gateway billing and cache-write charges were not supplied. No dollar estimate is asserted."
+  },
+  "audit": [
+    {
+      "sequence": 1,
+      "timestamp": "2026-10-24T23:52:16.389350+00:00",
+      "review_id": "ec33db643a7d4ae19fedbedf5e6767bf",
+      "actor": "connectivity",
+      "action": "model_request",
+      "status": "ok",
+      "duration_ms": null,
+      "data": {
+        "request_number": 1,
+        "attempt": 1,
+        "payload": {
+          "model": "gpt-6-luna",
+          "reasoning_effort": "none",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Reply with the single word connected."
+            }
+          ],
+          "max_completion_tokens": 32
+        }
+      }
+    },
+    {
+      "sequence": 2,
+      "timestamp": "2026-10-24T23:52:17.797377+00:00",
+      "review_id": "ec33db643a7d4ae19fedbedf5e6767bf",
+      "actor": "connectivity",
+      "action": "model_response",
+      "status": "ok",
+      "duration_ms": 1407.887,
+      "data": {
+        "request_number": 1,
+        "response": {
+          "id": "chatcmpl-Ecfp2gqeGVB22TsGoP36aqsJnPfji",
+          "model": "gpt-6-luna-2026-09-22",
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "connected",
+                "role": "assistant",
+                "function_call": null,
+                "tool_calls": null,
+                "refusal": null,
+                "audio": null,
+                "annotations": []
+              },
+              "content_filter_results": {
+                "hate": {
+                  "filtered": false,
+                  "severity": "safe"
+                },
+                "self_harm": {
+                  "filtered": false,
+                  "severity": "safe"
+                },
+                "sexual": {
+                  "filtered": false,
+                  "severity": "safe"
+                },
+                "violence": {
+                  "filtered": false,
+                  "severity": "safe"
+                }
+              }
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 13,
+            "completion_tokens": 4,
+            "total_tokens": 17,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0
+            },
+            "latency_checkpoint": {
+              "engine_tbt_ms": 3,
+              "engine_ttft_ms": 55,
+              "engine_ttlt_ms": 70,
+              "pre_inference_ms": 64,
+              "service_tbt_ms": 5,
+              "service_ttft_ms": 176,
+              "service_ttlt_ms": 195,
+              "user_visible_ttft_ms": 112
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 13,
+          "cached_input_tokens": 0,
+          "output_tokens": 4,
+          "total_tokens": 17
+        }
+      }
+    },
+    {
+      "sequence": 3,
+      "timestamp": "2026-10-24T23:52:17.797702+00:00",
+      "review_id": "ec33db643a7d4ae19fedbedf5e6767bf",
+      "actor": "probe",
+      "action": "model_request",
+      "status": "ok",
+      "duration_ms": null,
+      "data": {
+        "request_number": 2,
+        "attempt": 1,
+        "payload": {
+          "model": "gpt-6-luna",
+          "reasoning_effort": "none",
+          "messages": [
+            {
+              "role": "system",
+              "content": "Use the relevant tool to retrieve the test phrase. Do not guess. After receiving it, return JSON with a phrase field."
+            },
+            {
+              "role": "user",
+              "content": "Retrieve the test phrase using the available tools."
+            }
+          ],
+          "max_completion_tokens": 128,
+          "tools": [
+            {
+              "type": "function",
+              "function": {
+                "name": "get_probe_phrase",
+                "description": "Retrieve the secret test phrase for this connectivity exercise.",
+                "strict": true,
+                "parameters": {
+                  "type": "object",
+                  "properties": {},
+                  "required": [],
+                  "additionalProperties": false
+                }
+              }
+            },
+            {
+              "type": "function",
+              "function": {
+                "name": "get_unused_color",
+                "description": "Retrieve an unrelated test color.",
+                "strict": true,
+                "parameters": {
+                  "type": "object",
+                  "properties": {},
+                  "required": [],
+                  "additionalProperties": false
+                }
+              }
+            }
+          ],
+          "tool_choice": "auto",
+          "parallel_tool_calls": true
+        }
+      }
+    },
+    {
+      "sequence": 4,
+      "timestamp": "2026-10-24T23:52:18.917127+00:00",
+      "review_id": "ec33db643a7d4ae19fedbedf5e6767bf",
+      "actor": "probe",
+      "action": "model_response",
+      "status": "ok",
+      "duration_ms": 1119.403,
+      "data": {
+        "request_number": 2,
+        "response": {
+          "id": "chatcmpl-Ecfp32lyEJC734xM37zyodGk41Pvr",
+          "model": "gpt-6-luna-2026-09-22",
+          "choices": [
+            {
+              "finish_reason": "tool_calls",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": null,
+                "role": "assistant",
+                "function_call": null,
+                "tool_calls": [
+                  {
+                    "id": "call_4nFw9QQsXlRBTeSNeKJzVFme",
+                    "function": {
+                      "arguments": "{}",
+                      "name": "get_probe_phrase"
+                    },
+                    "type": "function"
+                  }
+                ],
+                "refusal": null,
+                "audio": null,
+                "annotations": []
+              },
+              "content_filter_results": {
+                "hate": {
+                  "filtered": false,
+                  "severity": "safe"
+                },
+                "self_harm": {
+                  "filtered": false,
+                  "severity": "safe"
+                },
+                "sexual": {
+                  "filtered": false,
+                  "severity": "safe"
+                },
+                "violence": {
+                  "filtered": false,
+                  "severity": "safe"
+                }
+              }
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 175,
+            "completion_tokens": 14,
+            "total_tokens": 189,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0
+            },
+            "latency_checkpoint": {
+              "engine_tbt_ms": 4,
+              "engine_ttft_ms": 73,
+              "engine_ttlt_ms": 127,
+              "pre_inference_ms": 88,
+              "service_tbt_ms": 1,
+              "service_ttft_ms": 414,
+              "service_ttlt_ms": 427,
+              "user_visible_ttft_ms": 325
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 175,
+          "cached_input_tokens": 0,
+          "output_tokens": 14,
+          "total_tokens": 189
+        }
+      }
+    },
+    {
+      "sequence": 5,
+      "timestamp": "2026-10-24T23:52:18.917327+00:00",
+      "review_id": "ec33db643a7d4ae19fedbedf5e6767bf",
+      "actor": "probe",
+      "action": "tool_result",
+      "status": "ok",
+      "duration_ms": null,
+      "data": {
+        "tool": "get_probe_phrase",
+        "arguments": {},
+        "result": {
+          "phrase": "cedar harbor"
+        }
+      }
+    },
+    {
+      "sequence": 6,
+      "timestamp": "2026-10-24T23:52:18.917510+00:00",
+      "review_id": "ec33db643a7d4ae19fedbedf5e6767bf",
+      "actor": "probe",
+      "action": "model_request",
+      "status": "ok",
+      "duration_ms": null,
+      "data": {
+        "request_number": 3,
+        "attempt": 1,
+        "payload": {
+          "model": "gpt-6-luna",
+          "reasoning_effort": "none",
+          "messages": [
+            {
+              "role": "system",
+              "content": "Use the relevant tool to retrieve the test phrase. Do not guess. After receiving it, return JSON with a phrase field."
+            },
+            {
+              "role": "user",
+              "content": "Retrieve the test phrase using the available tools."
+            },
+            {
+              "role": "assistant",
+              "content": null,
+              "tool_calls": [
+                {
+                  "id": "call_4nFw9QQsXlRBTeSNeKJzVFme",
+                  "function": {
+                    "arguments": "{}",
+                    "name": "get_probe_phrase"
+                  },
+                  "type": "function"
+                }
+              ]
+            },
+            {
+              "role": "tool",
+              "tool_call_id": "call_4nFw9QQsXlRBTeSNeKJzVFme",
+              "content": "{\"phrase\": \"cedar harbor\"}"
+            }
+          ],
+          "max_completion_tokens": 128,
+          "response_format": {
+            "type": "json_schema",
+            "json_schema": {
+              "name": "probe_result",
+              "strict": true,
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "phrase": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "phrase"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": 7,
+      "timestamp": "2026-10-24T23:52:19.837356+00:00",
+      "review_id": "ec33db643a7d4ae19fedbedf5e6767bf",
+      "actor": "probe",
+      "action": "model_response",
+      "status": "ok",
+      "duration_ms": 919.802,
+      "data": {
+        "request_number": 3,
+        "response": {
+          "id": "chatcmpl-Ecfp4kCnGpI67cBYENxeikqZCEC2i",
+          "model": "gpt-6-luna-2026-09-22",
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "{\"phrase\":\"cedar harbor\"}",
+                "role": "assistant",
+                "function_call": null,
+                "tool_calls": null,
+                "refusal": null,
+                "audio": null,
+                "annotations": []
+              },
+              "content_filter_results": {
+                "hate": {
+                  "filtered": false,
+                  "severity": "safe"
+                },
+                "self_harm": {
+                  "filtered": false,
+                  "severity": "safe"
+                },
+                "sexual": {
+                  "filtered": false,
+                  "severity": "safe"
+                },
+                "violence": {
+                  "filtered": false,
+                  "severity": "safe"
+                }
+              }
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 103,
+            "completion_tokens": 14,
+            "total_tokens": 117,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0
+            },
+            "latency_checkpoint": {
+              "engine_tbt_ms": 4,
+              "engine_ttft_ms": 75,
+              "engine_ttlt_ms": 133,
+              "pre_inference_ms": 69,
+              "service_tbt_ms": 4,
+              "service_ttft_ms": 211,
+              "service_ttlt_ms": 263,
+              "user_visible_ttft_ms": 142
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 103,
+          "cached_input_tokens": 0,
+          "output_tokens": 14,
+          "total_tokens": 117
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+segment_id,territory,driver_class,vehicle_group,current_base_rate,proposed_base_rate,current_rating_factor,proposed_rating_factor,exposure,current_premium,reported_change_pct
+H03-S01,Lake Grove,Standard,Private passenger,517,537.68,0.71,0.7029,113,41478.91,2.960000
+H03-S02,West Point,Limited experience,Private passenger,554,576.16,0.82,0.82,125,56785.00,4.000000
+H03-S03,East Bridge,Experienced,Private passenger,591,614.64,0.93,0.9393,95,52214.85,5.040000
+H03-S04,Lake Grove,Standard,Private passenger,628,653.12,1.04,1.0608,104,67924.48,6.080000
+H03-S05,West Point,Limited experience,Private passenger,495,514.80,1.15,1.1270,27,15369.75,1.920000
+H03-S06,East Bridge,Experienced,Private passenger,532,553.28,0.69,0.737748,147,53960.76,11.196800
+H03-S07,Lake Grove,Standard,Private passenger,569,591.76,0.8,0.8,155,70556.0,4.000000
+H03-S08,West Point,Limited experience,Private passenger,606,630.24,0.91,0.9191,114,62866.44,5.040000
+H03-S09,East Bridge,Experienced,Private passenger,643,668.72,1.02,1.0404,90,59027.40,6.080000
+H03-S10,Lake Grove,Standard,Private passenger,510,530.40,1.13,1.1074,86,49561.80,1.920000
+H03-S11,West Point,Limited experience,Private passenger,547,568.88,0.67,0.6633,111,40680.39,2.960000
+H03-S12,East Bridge,Experienced,Private passenger,584,607.36,0.78,0.78,161,73338.72,4.000000

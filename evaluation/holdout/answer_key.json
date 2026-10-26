@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "provenance": "Manually specified planted conditions, separate from the application engine and case generator. Exact portfolio metrics are checked by a separate Fraction oracle over CSV source values.",
+  "cases": {
+    "H01": {"segments": 9, "issues": []},
+    "H02": {"segments": 17, "issues": [
+      {"id":"H02-N01","kind":"deterministic","anchor":"SEGMENT_CHANGE_MISMATCH:H02-S03"},
+      {"id":"H02-N02","kind":"deterministic","anchor":"CURRENT_PREMIUM_MISMATCH:H02-S11"},
+      {"id":"H02-N03","kind":"deterministic","anchor":"LARGE_RATE_CHANGE:H02-S08"},
+      {"id":"H02-N04","kind":"deterministic","anchor":"OVERALL_CHANGE_MISMATCH:portfolio"},
+      {"id":"H02-D01","kind":"documentation","anchor":"documentation_contradiction:narrative.md"}
+    ]},
+    "H03": {"segments": 12, "issues": [
+      {"id":"H03-D01","kind":"documentation","anchor":"missing_documentation:DOC-FACTORS"},
+      {"id":"H03-D02","kind":"documentation","anchor":"documentation_contradiction:narrative.md"}
+    ]},
+    "H04": {"segments": 26, "issues": []},
+    "H05": {"segments": 20, "issues": [
+      {"id":"H05-N01","kind":"deterministic","anchor":"WEIGHT_UNAVAILABLE:current_premium"},
+      {"id":"H05-D01","kind":"documentation","anchor":"unsupported_claim:DOC-APPROVAL"}
+    ]}
+  }
+}

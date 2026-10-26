@@ -1,0 +1,32 @@
+# PAID candidate: use only after owner approval. One instance, one worker.
+# Current published compute: $7/month; 1 GB disk: $0.25/month (usage extras excluded).
+services:
+  - type: web
+    name: lumen-rate-intelligence
+    runtime: docker
+    plan: 0.5c-512mb
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    autoDeployTrigger: off
+    disk:
+      name: lumen-runtime
+      mountPath: /app/runtime
+      sizeGB: 1
+    envVars:
+      - key: WEB_PUBLIC_MODE
+        value: "true"
+      - key: WEB_LIVE_ENABLED
+        value: "true"
+      - key: WEB_ORIGIN
+        sync: false
+      - key: WEB_ACCESS_CODE
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: WEB_DAILY_REVIEWS
+        value: "6"
+      - key: WEB_SESSION_REVIEWS
+        value: "2"
+      - key: WEB_RETENTION_HOURS
+        value: "24"

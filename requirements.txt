@@ -1,0 +1,11 @@
+# Tested with Python 3.14; exact direct dependencies for this classroom MVP.
+fastapi==0.128.0
+pydantic==2.12.5
+uvicorn==0.40.0
+python-dotenv==1.2.1
+openpyxl==3.1.5
+httpx==0.28.1
+pytest==9.0.2
+openai==3.37.0
+python-multipart==0.0.22
+defusedxml==0.7.1

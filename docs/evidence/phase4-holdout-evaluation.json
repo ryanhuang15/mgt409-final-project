@@ -1,0 +1,323 @@
+{
+  "method": "Exact code/affected segment for deterministic findings; category plus explicit source document for documentation. Counts use multiset matching; no semantic partial credit.",
+  "cases": [
+    {
+      "case": "H01",
+      "segment_count": 9,
+      "expected_issues": 0,
+      "metric_errors": [],
+      "deterministic": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "precision": null,
+        "recall": null,
+        "missed": [],
+        "unexpected": []
+      },
+      "complete_workflow": {
+        "status": "complete",
+        "issues": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": null,
+          "recall": null,
+          "missed": [],
+          "unexpected": []
+        },
+        "documentation": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": null,
+          "recall": null,
+          "missed": [],
+          "unexpected": []
+        },
+        "invalid_evidence_references": [],
+        "duration_ms": 18050.596,
+        "model_latency_ms": 17828.647,
+        "usage": {
+          "total_model_calls": 7,
+          "successful_responses": 7,
+          "model_latency_ms": 17828.647,
+          "input_tokens": 26454,
+          "reported_input_tokens_subtotal": 26454,
+          "cached_input_tokens": 20938,
+          "reported_cached_input_tokens_subtotal": 20938,
+          "output_tokens": 1812,
+          "reported_output_tokens_subtotal": 1812,
+          "total_tokens": 28266,
+          "reported_total_tokens_subtotal": 28266,
+          "usage_complete": true,
+          "exact_billed_cost_usd": null,
+          "estimated_cost_usd": null,
+          "cost_note": "Token measurements only; gateway billing and cache-write charges were not supplied. No dollar estimate is asserted."
+        },
+        "review_id": "94483a626dca4d40a5f2081ee0883141"
+      },
+      "deterministic_latency_ms": 0.503
+    },
+    {
+      "case": "H02",
+      "segment_count": 17,
+      "expected_issues": 5,
+      "metric_errors": [],
+      "deterministic": {
+        "true_positives": 4,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "missed": [],
+        "unexpected": []
+      },
+      "complete_workflow": {
+        "status": "complete",
+        "issues": {
+          "true_positives": 5,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.8333333333333334,
+          "recall": 1.0,
+          "missed": [],
+          "unexpected": [
+            "unsupported_claim:DOC-FACTORS,narrative.md"
+          ]
+        },
+        "documentation": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "missed": [],
+          "unexpected": [
+            "unsupported_claim:DOC-FACTORS,narrative.md"
+          ]
+        },
+        "invalid_evidence_references": [],
+        "duration_ms": 22498.304,
+        "model_latency_ms": 22334.245,
+        "usage": {
+          "total_model_calls": 7,
+          "successful_responses": 7,
+          "model_latency_ms": 22334.245,
+          "input_tokens": 39601,
+          "reported_input_tokens_subtotal": 39601,
+          "cached_input_tokens": 28893,
+          "reported_cached_input_tokens_subtotal": 28893,
+          "output_tokens": 2862,
+          "reported_output_tokens_subtotal": 2862,
+          "total_tokens": 42463,
+          "reported_total_tokens_subtotal": 42463,
+          "usage_complete": true,
+          "exact_billed_cost_usd": null,
+          "estimated_cost_usd": null,
+          "cost_note": "Token measurements only; gateway billing and cache-write charges were not supplied. No dollar estimate is asserted."
+        },
+        "review_id": "c4b26245fdc740a89b253a52f8347f5e"
+      },
+      "deterministic_latency_ms": 0.659
+    },
+    {
+      "case": "H03",
+      "segment_count": 12,
+      "expected_issues": 2,
+      "metric_errors": [],
+      "deterministic": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "precision": null,
+        "recall": null,
+        "missed": [],
+        "unexpected": []
+      },
+      "complete_workflow": {
+        "status": "complete",
+        "issues": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "missed": [],
+          "unexpected": []
+        },
+        "documentation": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "missed": [],
+          "unexpected": []
+        },
+        "invalid_evidence_references": [],
+        "duration_ms": 19070.964,
+        "model_latency_ms": 18930.261,
+        "usage": {
+          "total_model_calls": 7,
+          "successful_responses": 7,
+          "model_latency_ms": 18930.261,
+          "input_tokens": 27311,
+          "reported_input_tokens_subtotal": 27311,
+          "cached_input_tokens": 22554,
+          "reported_cached_input_tokens_subtotal": 22554,
+          "output_tokens": 1810,
+          "reported_output_tokens_subtotal": 1810,
+          "total_tokens": 29121,
+          "reported_total_tokens_subtotal": 29121,
+          "usage_complete": true,
+          "exact_billed_cost_usd": null,
+          "estimated_cost_usd": null,
+          "cost_note": "Token measurements only; gateway billing and cache-write charges were not supplied. No dollar estimate is asserted."
+        },
+        "review_id": "dce17039ddc245da97fa7d8b755801ed"
+      },
+      "deterministic_latency_ms": 0.574
+    },
+    {
+      "case": "H04",
+      "segment_count": 26,
+      "expected_issues": 0,
+      "metric_errors": [],
+      "deterministic": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "precision": null,
+        "recall": null,
+        "missed": [],
+        "unexpected": []
+      },
+      "complete_workflow": {
+        "status": "complete",
+        "issues": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": null,
+          "recall": null,
+          "missed": [],
+          "unexpected": []
+        },
+        "documentation": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": null,
+          "recall": null,
+          "missed": [],
+          "unexpected": []
+        },
+        "invalid_evidence_references": [],
+        "duration_ms": 13675.456,
+        "model_latency_ms": 13498.792,
+        "usage": {
+          "total_model_calls": 5,
+          "successful_responses": 5,
+          "model_latency_ms": 13498.792,
+          "input_tokens": 18420,
+          "reported_input_tokens_subtotal": 18420,
+          "cached_input_tokens": 14101,
+          "reported_cached_input_tokens_subtotal": 14101,
+          "output_tokens": 1156,
+          "reported_output_tokens_subtotal": 1156,
+          "total_tokens": 19576,
+          "reported_total_tokens_subtotal": 19576,
+          "usage_complete": true,
+          "exact_billed_cost_usd": null,
+          "estimated_cost_usd": null,
+          "cost_note": "Token measurements only; gateway billing and cache-write charges were not supplied. No dollar estimate is asserted."
+        },
+        "review_id": "06a5308de61449a2b7024621887dd805"
+      },
+      "deterministic_latency_ms": 1.902
+    },
+    {
+      "case": "H05",
+      "segment_count": 20,
+      "expected_issues": 2,
+      "metric_errors": [],
+      "deterministic": {
+        "true_positives": 1,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "missed": [],
+        "unexpected": []
+      },
+      "complete_workflow": {
+        "status": "complete",
+        "issues": {
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "missed": [],
+          "unexpected": []
+        },
+        "documentation": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "missed": [],
+          "unexpected": []
+        },
+        "invalid_evidence_references": [],
+        "duration_ms": 17360.5,
+        "model_latency_ms": 17237.565,
+        "usage": {
+          "total_model_calls": 6,
+          "successful_responses": 6,
+          "model_latency_ms": 17237.565,
+          "input_tokens": 40692,
+          "reported_input_tokens_subtotal": 40692,
+          "cached_input_tokens": 25094,
+          "reported_cached_input_tokens_subtotal": 25094,
+          "output_tokens": 2113,
+          "reported_output_tokens_subtotal": 2113,
+          "total_tokens": 42805,
+          "reported_total_tokens_subtotal": 42805,
+          "usage_complete": true,
+          "exact_billed_cost_usd": null,
+          "estimated_cost_usd": null,
+          "cost_note": "Token measurements only; gateway billing and cache-write charges were not supplied. No dollar estimate is asserted."
+        },
+        "review_id": "961b82af57e14674a102646ec86e7b4c"
+      },
+      "deterministic_latency_ms": 1.389
+    }
+  ],
+  "aggregate_deterministic": {
+    "true_positives": 5,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "precision": 1.0,
+    "recall": 1.0
+  },
+  "aggregate_full": {
+    "true_positives": 9,
+    "false_positives": 1,
+    "false_negatives": 0,
+    "precision": 0.9,
+    "recall": 1.0
+  },
+  "aggregate_documentation": {
+    "true_positives": 4,
+    "false_positives": 1,
+    "false_negatives": 0,
+    "precision": 0.8,
+    "recall": 1.0
+  },
+  "case_count": 5,
+  "live_results_available": 5,
+  "limitation": "Five seeded synthetic cases measure performance on this set only, not statistical generalization."
+}

@@ -1,0 +1,73 @@
+{
+  "verified_at": "2026-10-25T00:49:43.676325+00:00",
+  "python_tests": {
+    "tests": 230,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "browser_tests": {
+    "startTime": "2026-10-25T00:41:31.152Z",
+    "duration": 41280.886,
+    "expected": 8,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "live_review": {
+    "scenario": "flawed",
+    "review_id": "6993029591d74ddbb15bf040481a4afa",
+    "passed": true,
+    "status": "complete",
+    "deterministic_expected": 5,
+    "deterministic_matched": 5,
+    "unexpected_deterministic": [],
+    "numeric_errors": [],
+    "ai_expected_issue_ids": [
+      "FL-D01",
+      "FL-D02",
+      "FL-D03"
+    ],
+    "ai_matched_issue_ids": [
+      "FL-D01",
+      "FL-D02",
+      "FL-D03"
+    ],
+    "unexpected_ai_findings": [],
+    "severity_mismatches": [],
+    "evidence_references_valid": true,
+    "invalid_evidence_refs": [],
+    "successful_tool_calls": 13,
+    "rejected_tool_calls": 0,
+    "usage": {
+      "total_model_calls": 9,
+      "successful_responses": 9,
+      "model_latency_ms": 23884.63,
+      "input_tokens": 53775,
+      "reported_input_tokens_subtotal": 53775,
+      "cached_input_tokens": 42649,
+      "reported_cached_input_tokens_subtotal": 42649,
+      "output_tokens": 2297,
+      "reported_output_tokens_subtotal": 2297,
+      "total_tokens": 56072,
+      "reported_total_tokens_subtotal": 56072,
+      "usage_complete": true,
+      "exact_billed_cost_usd": null,
+      "estimated_cost_usd": null,
+      "cost_note": "Token measurements only; gateway billing and cache-write charges were not supplied. No dollar estimate is asserted."
+    },
+    "duration_ms": 24122.099,
+    "attack": null,
+    "scoring_note": "AI matching uses the independent category/affected-document rubric. Semantic correctness still requires reading the saved explanations and source quotes; it is not a separate LLM grader."
+  },
+  "configuration": {
+    "selected_dotenv": "parent",
+    "api_key_configured": true,
+    "secret_found_in_frontend_or_phase3_evidence": false
+  },
+  "limitations": [
+    "One fresh Phase 3 live scenario; clean/adversarial browser paths use labeled real Phase 2 runs.",
+    "Docker unavailable; image build and hosted smoke test not executed.",
+    "No external publication or purchase. No exact model billing provided."
+  ]
+}

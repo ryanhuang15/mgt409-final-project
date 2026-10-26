@@ -1,0 +1,1 @@
+Synthetic Personal Auto rate revision. DOC-FACTORS contains the support for the proposed combined factor selections. The stated portfolio change uses fixed annual exposures and modeled annual premium. All amounts, insurer names, territories, and classes are fictional. This filing makes no legal compliance determination.

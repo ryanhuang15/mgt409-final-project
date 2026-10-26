@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "scenario_id": "revised_flawed",
+  "insurer": "Juniper Lantern Mutual Insurance Company (fictional)",
+  "synthetic": true,
+  "state": "CT",
+  "line_of_business": "Personal Auto",
+  "effective_date": "2027-01-01",
+  "premium_basis": "modeled_annual_same_portfolio",
+  "claimed_overall_change_pct": "6.131877",
+  "claimed_overall_basis": "fixed_exposure_portfolio",
+  "documents": [
+    {
+      "document_id": "DOC-RATES",
+      "title": "Synthetic rate exhibit",
+      "document_type": "rate_exhibit",
+      "status": "provided",
+      "text": "The accompanying uploaded rate exhibit shows the same 24 disjoint rating segments. Annual base rate changes from USD 600 to USD 630. Combined factors multiply the base rate. Reported percentages use 5.0 to mean 5 percent."
+    },
+    {
+      "document_id": "DOC-FACTORS",
+      "title": "Factor change explanation",
+      "document_type": "factor_support",
+      "status": "provided",
+      "text": "Synthetic driver revision multipliers: mature preferred 0.98, standard adult 1.00, limited experience 1.02, youthful 1.04. Synthetic territory revision multipliers: North Harbor 1.00, Elm Valley 0.99, River Junction 1.01, Cedar Center 1.00, South Shore 1.02, West Ridge 0.98. Proposed combined factor equals current combined factor times both revision multipliers. These illustrative selections are not based on real loss experience."
+    },
+    {
+      "document_id": "DOC-PREMIUM",
+      "title": "Exposure and premium basis",
+      "document_type": "premium_basis",
+      "status": "provided",
+      "text": "Exposures are annual vehicle-years in disjoint segments of a fixed portfolio. Current premium in USD equals exposures times the current annual modeled rate. Coverage, limits, deductibles and portfolio composition are held fixed. Fees, taxes, minimum premiums and individual-policy rounding are excluded. This is a simplified exercise, not a complete carrier rating algorithm."
+    }
+  ]
+}

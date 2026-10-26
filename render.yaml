@@ -1,0 +1,18 @@
+# Safe public preview. This file does not deploy anything by itself.
+# Assumes Final Project's contents are the repository root; see docs/deployment.md.
+services:
+  - type: web
+    name: lumen-rate-intelligence
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    autoDeployTrigger: off
+    envVars:
+      - key: WEB_PUBLIC_MODE
+        value: "true"
+      - key: WEB_LIVE_ENABLED
+        value: "false"
+      - key: WEB_ORIGIN
+        sync: false

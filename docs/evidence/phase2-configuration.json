@@ -1,0 +1,7 @@
+{
+  "env_source": "parent",
+  "key_configured": true,
+  "parent_env_unchanged": true,
+  "model": "gpt-6-luna",
+  "reasoning_effort": "none"
+}

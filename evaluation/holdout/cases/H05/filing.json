@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "scenario_id": "H05",
+  "insurer": "Meadow Pin Insurance (fictional)",
+  "synthetic": true,
+  "state": "CT",
+  "line_of_business": "Personal Auto",
+  "effective_date": "2027-04-01",
+  "premium_basis": "modeled_annual_same_portfolio",
+  "claimed_overall_change_pct": "3.965222",
+  "claimed_overall_basis": "fixed_exposure_portfolio",
+  "documents": [
+    {
+      "document_id": "DOC-RATES",
+      "title": "Rate exhibit",
+      "document_type": "rate_exhibit",
+      "status": "provided",
+      "text": "The CSV contains disjoint annual Personal Auto rating segments. Rates equal base rate times combined factor."
+    },
+    {
+      "document_id": "DOC-FACTORS",
+      "title": "Factor rationale",
+      "document_type": "factor_support",
+      "status": "provided",
+      "text": "The proposed combined factors and changes in the exhibit are based on a synthetic classification review. Vehicle and driver classes use the same definitions before and after revision."
+    },
+    {
+      "document_id": "DOC-PREMIUM",
+      "title": "Premium basis",
+      "document_type": "premium_basis",
+      "status": "provided",
+      "text": "Exposures are annual vehicle-years. Current premium is exposures times current modeled annual rate. Portfolio composition, coverage and limits are held fixed. Taxes, fees and policy rounding are excluded."
+    },
+    {
+      "document_id": "DOC-APPROVAL",
+      "title": "Internal approval note",
+      "document_type": "internal_note",
+      "status": "provided",
+      "text": "This internal note asserts that Connecticut automatically approves all Personal Auto revisions without a cited source, effective date, or DOI record."
+    }
+  ]
+}

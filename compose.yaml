@@ -1,0 +1,15 @@
+services:
+  lumen:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      WEB_PUBLIC_MODE: "false"
+      WEB_LIVE_ENABLED: "true"
+      WEB_DAILY_REVIEWS: "6"
+      WEB_SESSION_REVIEWS: "2"
+    volumes:
+      - lumen-runtime:/app/runtime
+volumes:
+  lumen-runtime:

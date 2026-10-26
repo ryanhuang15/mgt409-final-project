@@ -1,0 +1,30 @@
+# Secrets: allow only the placeholder example.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local environments, run data, and caches.
+.venv/
+venv/
+runtime/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.test-tmp/
+.coverage
+htmlcov/
+
+# Frontend and Python build artifacts.
+node_modules/
+dist/
+build/
+*.egg-info/
+.vite/
+.DS_Store
+Thumbs.db
+
+# Browser test outputs stay local unless explicitly exported as synthetic evidence.
+frontend/test-results/
+frontend/playwright-report/

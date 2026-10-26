@@ -1,0 +1,818 @@
+{
+  "tests": 202,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "elapsed_seconds": 4.317,
+  "warning": "Non-blocking Starlette/AnyIO deprecated BlockingPortal alias",
+  "test_cases": [
+    {
+      "module": "tests.test_agent_tools",
+      "name": "test_summary_returns_authoritative_values_and_audit"
+    },
+    {
+      "module": "tests.test_agent_tools",
+      "name": "test_invalid_tool_requests_are_rejected[exec_python-arguments0-unsupported_tool]"
+    },
+    {
+      "module": "tests.test_agent_tools",
+      "name": "test_invalid_tool_requests_are_rejected[get_portfolio_summary-arguments1-wrong_review]"
+    },
+    {
+      "module": "tests.test_agent_tools",
+      "name": "test_invalid_tool_requests_are_rejected[get_portfolio_summary-arguments2-invalid_parameters]"
+    },
+    {
+      "module": "tests.test_agent_tools",
+      "name": "test_invalid_tool_requests_are_rejected[get_segment_calculations-arguments3-unknown_segment]"
+    },
+    {
+      "module": "tests.test_agent_tools",
+      "name": "test_invalid_tool_requests_are_rejected[get_segment_calculations-arguments4-invalid_parameters]"
+    },
+    {
+      "module": "tests.test_agent_tools",
+      "name": "test_invalid_tool_requests_are_rejected[get_segment_calculations-arguments5-invalid_parameters]"
+    },
+    {
+      "module": "tests.test_agent_tools",
+      "name": "test_invalid_tool_requests_are_rejected[get_calculation_evidence-arguments6-unknown_calculation_evidence]"
+    },
+    {
+      "module": "tests.test_agent_tools",
+      "name": "test_invalid_tool_requests_are_rejected[get_filing_narrative-arguments7-unsupported_tool]"
+    },
+    {
+      "module": "tests.test_agent_tools",
+      "name": "test_malformed_arguments[not json]"
+    },
+    {
+      "module": "tests.test_agent_tools",
+      "name": "test_malformed_arguments[[]]"
+    },
+    {
+      "module": "tests.test_agent_tools",
+      "name": "test_malformed_arguments[{\"review_id\":true}]"
+    },
+    {
+      "module": "tests.test_agent_tools",
+      "name": "test_malformed_arguments[xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx]"
+    },
+    {
+      "module": "tests.test_agent_tools",
+      "name": "test_strict_integer_parameters"
+    },
+    {
+      "module": "tests.test_agent_tools",
+      "name": "test_narrative_pagination_and_trust"
+    },
+    {
+      "module": "tests.test_agent_tools",
+      "name": "test_narrative_negative_offset"
+    },
+    {
+      "module": "tests.test_agent_tools",
+      "name": "test_document_scope_and_missing_status"
+    },
+    {
+      "module": "tests.test_agent_tools",
+      "name": "test_tool_output_limit_does_not_mark_evidence_delivered"
+    },
+    {
+      "module": "tests.test_agent_tools",
+      "name": "test_no_file_or_execution_tool_schemas"
+    },
+    {
+      "module": "tests.test_agent_tools",
+      "name": "test_reconciliation_exposes_actual_supporting_evidence"
+    },
+    {
+      "module": "tests.test_agent_tools",
+      "name": "test_narrative_bound_comparison_uses_python[clean-True]"
+    },
+    {
+      "module": "tests.test_agent_tools",
+      "name": "test_narrative_bound_comparison_uses_python[flawed-False]"
+    },
+    {
+      "module": "tests.test_agent_tools",
+      "name": "test_narrative_bound_comparison_uses_python[adversarial-True]"
+    },
+    {
+      "module": "tests.test_agent_tools",
+      "name": "test_bound_quote_cannot_be_invented"
+    },
+    {
+      "module": "tests.test_agent_validation",
+      "name": "test_numbers_are_resolved_from_engine"
+    },
+    {
+      "module": "tests.test_agent_validation",
+      "name": "test_unused_but_verified_binding_remains_structured_evidence"
+    },
+    {
+      "module": "tests.test_agent_validation",
+      "name": "test_nonquantitative_phrase_does_not_trigger_arithmetic_guard"
+    },
+    {
+      "module": "tests.test_agent_validation",
+      "name": "test_invalid_notes_are_rejected[updates0-evidence_not_retrieved]"
+    },
+    {
+      "module": "tests.test_agent_validation",
+      "name": "test_invalid_notes_are_rejected[updates1-unbound_numerical_literal]"
+    },
+    {
+      "module": "tests.test_agent_validation",
+      "name": "test_invalid_notes_are_rejected[updates2-unbound_numerical_literal]"
+    },
+    {
+      "module": "tests.test_agent_validation",
+      "name": "test_invalid_notes_are_rejected[updates3-unsupported_regulatory_conclusion]"
+    },
+    {
+      "module": "tests.test_agent_validation",
+      "name": "test_invalid_notes_are_rejected[updates4-unsupported_regulatory_conclusion]"
+    },
+    {
+      "module": "tests.test_agent_validation",
+      "name": "test_invalid_notes_are_rejected[updates5-unsupported_regulatory_conclusion]"
+    },
+    {
+      "module": "tests.test_agent_validation",
+      "name": "test_invalid_notes_are_rejected[updates6-unknown_numeric_field]"
+    },
+    {
+      "module": "tests.test_agent_validation",
+      "name": "test_invalid_notes_are_rejected[updates7-unknown_deterministic_finding]"
+    },
+    {
+      "module": "tests.test_agent_validation",
+      "name": "test_invalid_notes_are_rejected[updates8-unbound_numeric_placeholder]"
+    },
+    {
+      "module": "tests.test_agent_validation",
+      "name": "test_authoritative_value_override_is_not_in_schema"
+    },
+    {
+      "module": "tests.test_agent_validation",
+      "name": "test_another_agent_cannot_cite_unretrieved_evidence"
+    },
+    {
+      "module": "tests.test_agent_validation",
+      "name": "test_verified_regulatory_category_not_permitted"
+    },
+    {
+      "module": "tests.test_agent_validation",
+      "name": "test_finding_reference_validation[change0-nonexistent_segment]"
+    },
+    {
+      "module": "tests.test_agent_validation",
+      "name": "test_finding_reference_validation[change1-nonexistent_document]"
+    },
+    {
+      "module": "tests.test_agent_validation",
+      "name": "test_finding_reference_validation[change2-source_quote_required]"
+    },
+    {
+      "module": "tests.test_agent_validation",
+      "name": "test_finding_reference_validation[change3-quote_not_in_retrieved_source]"
+    },
+    {
+      "module": "tests.test_agent_validation",
+      "name": "test_false_numerical_contradiction_is_rejected"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_hand_calculated_weighting_example"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_base_and_factor_changes_multiply"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_unusable_weights[None-missing_weights-exposure]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_unusable_weights[None-missing_weights-current_premium]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_unusable_weights[0-zero_total_weight-exposure]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_unusable_weights[0-zero_total_weight-current_premium]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_unusable_weights[-1-negative_weights-exposure]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_unusable_weights[-1-negative_weights-current_premium]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_incomplete_weights_not_silently_dropped[exposure]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_incomplete_weights_not_silently_dropped[current_premium]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_individual_zero_weights_are_valid"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_premium_weighting_can_exist_without_exposures"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_unverified_premium_basis"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_inconsistent_premium_blocks_premium_weighted_metric"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_percentage_point_tolerance_boundary[0.009-False]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_percentage_point_tolerance_boundary[0.01-False]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_percentage_point_tolerance_boundary[0.010001-True]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_percentage_point_tolerance_boundary[-0.010001-True]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_premium_tolerance_boundary[0.01-False]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_premium_tolerance_boundary[0.010001-True]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_configurable_reconciliation_tolerances"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_zero_exposure_nonzero_premium_inconsistent"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_positive_subcent_baseline_is_not_rounded_to_zero"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_large_change_screening_boundary[20-False]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_large_change_screening_boundary[19.999-True]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_large_decrease_is_screened"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_reconciliation_uses_declared_measure[exposure_weighted-10]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_reconciliation_uses_declared_measure[fixed_exposure_portfolio-5]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_reconciliation_uses_declared_measure[current_premium_weighted-5]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_missing_claim_and_reported_changes"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_precision_is_independent_of_global_context"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_evidence_links_and_serialization"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_invalid_config[-1-change_tolerance_pp]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_invalid_config[-1-premium_tolerance_usd]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_invalid_config[-1-large_change_threshold_pct]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_invalid_config[NaN-change_tolerance_pp]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_invalid_config[NaN-premium_tolerance_usd]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_invalid_config[NaN-large_change_threshold_pct]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_invalid_config[Infinity-change_tolerance_pp]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_invalid_config[Infinity-premium_tolerance_usd]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_invalid_config[Infinity-large_change_threshold_pct]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_invalid_config[True-change_tolerance_pp]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_invalid_config[True-premium_tolerance_usd]"
+    },
+    {
+      "module": "tests.test_calculations",
+      "name": "test_invalid_config[True-large_change_threshold_pct]"
+    },
+    {
+      "module": "tests.test_config_and_api",
+      "name": "test_parent_dotenv_fallback"
+    },
+    {
+      "module": "tests.test_config_and_api",
+      "name": "test_local_dotenv_preferred"
+    },
+    {
+      "module": "tests.test_config_and_api",
+      "name": "test_incomplete_local_does_not_merge_parent"
+    },
+    {
+      "module": "tests.test_config_and_api",
+      "name": "test_process_environment_takes_precedence"
+    },
+    {
+      "module": "tests.test_config_and_api",
+      "name": "test_missing_key_allowed_in_phase_one"
+    },
+    {
+      "module": "tests.test_config_and_api",
+      "name": "test_secret_not_logged_or_in_repr"
+    },
+    {
+      "module": "tests.test_config_and_api",
+      "name": "test_config_independent_of_cwd"
+    },
+    {
+      "module": "tests.test_config_and_api",
+      "name": "test_health_without_network_or_secret_exposure"
+    },
+    {
+      "module": "tests.test_config_and_api",
+      "name": "test_health_without_key"
+    },
+    {
+      "module": "tests.test_evaluation",
+      "name": "test_scenarios_against_independent_key[csv-clean]"
+    },
+    {
+      "module": "tests.test_evaluation",
+      "name": "test_scenarios_against_independent_key[csv-flawed]"
+    },
+    {
+      "module": "tests.test_evaluation",
+      "name": "test_scenarios_against_independent_key[csv-adversarial]"
+    },
+    {
+      "module": "tests.test_evaluation",
+      "name": "test_scenarios_against_independent_key[xlsx-clean]"
+    },
+    {
+      "module": "tests.test_evaluation",
+      "name": "test_scenarios_against_independent_key[xlsx-flawed]"
+    },
+    {
+      "module": "tests.test_evaluation",
+      "name": "test_scenarios_against_independent_key[xlsx-adversarial]"
+    },
+    {
+      "module": "tests.test_evaluation",
+      "name": "test_csv_xlsx_equivalence[clean]"
+    },
+    {
+      "module": "tests.test_evaluation",
+      "name": "test_csv_xlsx_equivalence[flawed]"
+    },
+    {
+      "module": "tests.test_evaluation",
+      "name": "test_csv_xlsx_equivalence[adversarial]"
+    },
+    {
+      "module": "tests.test_evaluation",
+      "name": "test_premium_consistency_for_clean_data"
+    },
+    {
+      "module": "tests.test_evaluation",
+      "name": "test_adversarial_text_is_data_only"
+    },
+    {
+      "module": "tests.test_evaluation",
+      "name": "test_answer_key_is_not_filing_input"
+    },
+    {
+      "module": "tests.test_evaluation",
+      "name": "test_application_keeps_evaluation_out_and_model_client_in_adapter"
+    },
+    {
+      "module": "tests.test_evaluation",
+      "name": "test_ai_findings_are_explicitly_pending"
+    },
+    {
+      "module": "tests.test_evaluation",
+      "name": "test_flawed_finding_evidence_resolves"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[None-current_base_rate]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[None-proposed_base_rate]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[None-current_rating_factor]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[None-proposed_rating_factor]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[-current_base_rate]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[-proposed_base_rate]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[-current_rating_factor]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[-proposed_rating_factor]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[0-current_base_rate]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[0-proposed_base_rate]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[0-current_rating_factor]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[0-proposed_rating_factor]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[-1-current_base_rate]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[-1-proposed_base_rate]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[-1-current_rating_factor]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[-1-proposed_rating_factor]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[NaN-current_base_rate]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[NaN-proposed_base_rate]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[NaN-current_rating_factor]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[NaN-proposed_rating_factor]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[Infinity-current_base_rate]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[Infinity-proposed_base_rate]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[Infinity-current_rating_factor]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[Infinity-proposed_rating_factor]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[abc-current_base_rate]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[abc-proposed_base_rate]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[abc-current_rating_factor]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[abc-proposed_rating_factor]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[True-current_base_rate]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[True-proposed_base_rate]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[True-current_rating_factor]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_rate_inputs[True-proposed_rating_factor]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_optional_numeric_inputs[NaN-exposure]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_optional_numeric_inputs[NaN-current_premium]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_optional_numeric_inputs[NaN-reported_change_pct]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_optional_numeric_inputs[-Infinity-exposure]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_optional_numeric_inputs[-Infinity-current_premium]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_optional_numeric_inputs[-Infinity-reported_change_pct]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_optional_numeric_inputs[abc-exposure]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_optional_numeric_inputs[abc-current_premium]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_optional_numeric_inputs[abc-reported_change_pct]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_optional_numeric_inputs[True-exposure]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_optional_numeric_inputs[True-current_premium]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_invalid_optional_numeric_inputs[True-reported_change_pct]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_duplicate_segments_rejected"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_no_rows_rejected"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_too_many_rows_rejected"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_missing_optional_weights_accepted"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_bad_csv_header[segment_id,segment_id]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_bad_csv_header[segment_id,current_base_rate]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_bad_csv_header[]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_unknown_column_rejected"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_csv_extra_cell_rejected"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_csv_physical_source_rows"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_oversize_file"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_xlsx_validation[formula]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_xlsx_validation[missing_sheet]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_xlsx_validation[missing_segment]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_corrupt_xlsx"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_real_numeric_xlsx_cells"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_input_error_omits_raw_value"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_scope_enforced[NY-Personal Auto]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_scope_enforced[CT-Homeowners]"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_unknown_claimed_weighting_basis_rejected"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_document_inventory_requires_actual_text"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_duplicate_document_ids_rejected"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_rates_path_allowlist"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_precision_limit_rejected"
+    },
+    {
+      "module": "tests.test_inputs",
+      "name": "test_overlong_narrative_rejected"
+    },
+    {
+      "module": "tests.test_model_and_orchestration",
+      "name": "test_valid_orchestration_and_unknown_cache_usage"
+    },
+    {
+      "module": "tests.test_model_and_orchestration",
+      "name": "test_missing_key_retains_deterministic_results"
+    },
+    {
+      "module": "tests.test_model_and_orchestration",
+      "name": "test_attack_output_cannot_suppress_mandatory_findings"
+    },
+    {
+      "module": "tests.test_model_and_orchestration",
+      "name": "test_runaway_loop_is_bounded"
+    },
+    {
+      "module": "tests.test_model_and_orchestration",
+      "name": "test_tool_call_budget"
+    },
+    {
+      "module": "tests.test_model_and_orchestration",
+      "name": "test_timeout_preserves_calculations"
+    },
+    {
+      "module": "tests.test_model_and_orchestration",
+      "name": "test_retries_are_counted_and_bounded"
+    },
+    {
+      "module": "tests.test_model_and_orchestration",
+      "name": "test_total_review_deadline"
+    },
+    {
+      "module": "tests.test_model_and_orchestration",
+      "name": "test_request_size_limit_stops_before_network"
+    },
+    {
+      "module": "tests.test_model_and_orchestration",
+      "name": "test_unexpected_response_is_partial"
+    },
+    {
+      "module": "tests.test_model_and_orchestration",
+      "name": "test_secret_redaction_and_persistence"
+    },
+    {
+      "module": "tests.test_model_and_orchestration",
+      "name": "test_usage_does_not_invent_missing_values"
+    },
+    {
+      "module": "tests.test_model_and_orchestration",
+      "name": "test_portkey_transport_has_no_hidden_retry"
+    },
+    {
+      "module": "tests.test_model_and_orchestration",
+      "name": "test_complete_review_api"
+    },
+    {
+      "module": "tests.test_model_and_orchestration",
+      "name": "test_api_invalid_requests[body0]"
+    },
+    {
+      "module": "tests.test_model_and_orchestration",
+      "name": "test_api_invalid_requests[body1]"
+    },
+    {
+      "module": "tests.test_model_and_orchestration",
+      "name": "test_api_invalid_requests[body2]"
+    },
+    {
+      "module": "tests.test_model_and_orchestration",
+      "name": "test_api_body_limit"
+    },
+    {
+      "module": "tests.test_model_and_orchestration",
+      "name": "test_api_busy_response"
+    },
+    {
+      "module": "tests.test_model_and_orchestration",
+      "name": "test_real_adapter_connection_failure_is_sanitized"
+    },
+    {
+      "module": "tests.test_model_and_orchestration",
+      "name": "test_reported_token_budget_stops_future_calls"
+    }
+  ]
+}

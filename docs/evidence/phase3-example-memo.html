@@ -1,0 +1,242 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lumen · Review memo</title>
+<style>body{margin:0;background:#edf0f3;color:#172334;font:15px/1.65 system-ui,sans-serif}main{max-width:960px;margin:35px auto;background:white;padding:60px;border-top:6px solid #c53573}h1{font-size:40px;letter-spacing:-1.5px;line-height:1.1}h2{margin-top:38px;border-bottom:1px solid #ccd3dc;padding-bottom:10px}h3{margin-bottom:6px}.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:11px;color:#a42760}.small,footer{font-size:12px;color:#586477}.notice{background:#fcf0f5;border-left:3px solid #c53573;padding:14px 20px}article{padding:12px 0;border-bottom:1px solid #e0e5eb;break-inside:avoid}table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;padding:10px 8px;border-bottom:1px solid #e0e5eb}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px;background:#f4f6f8;padding:15px}code{overflow-wrap:anywhere}summary{cursor:pointer;padding:10px}@media print{body{background:white}main{margin:0;padding:12mm;max-width:none}details>*{display:block}thead{display:table-header-group}h2,h3{break-after:avoid}}@page{size:A4;margin:12mm}</style>
+<main><p class="eyebrow">LUMEN / RATE INTELLIGENCE</p><h1>Independent filing<br>review memo</h1><p>Juniper Lantern Mutual Insurance Company (fictional)<br>Connecticut · Personal Auto · Effective 2027-01-01</p>
+<p class="small">Review b94b748c6d534285b830e7fc71b596e7 · 2026-10-25T00:14:23.753556+00:00<br>Saved real AI review · Status: complete</p>
+<div class="notice"><b>Human review required.</b> Synthetic data only. Connecticut is context; state-specific regulatory requirements have not been verified or implemented. This memo is analyst decision support and makes no legal-compliance or submission-approval determination.</div>
+<h2>Executive assessment</h2><p>8 findings returned; 5 high severity. Both specialized agent stages completed.</p><article><h3>Rate Analysis · complete</h3><p>The exposure-weighted rate-level change is 6.710625, while fixed-exposure premium impact is 7.84443. These describe different measures. Current-premium weighting is unavailable because current premiums are inconsistent. Deterministic findings identify mismatches in the claimed overall change, segment changes, and a supplied premium.</p></article><article><h3>Documentation Review · complete</h3><p>The submitted material contains unsupported factor-change rationale, an unsupported approval assertion, and a narrative claim contradicted by the calculated segment evidence. These are documentation findings, not a legal-compliance determination.</p></article>
+<h2>Portfolio impact</h2><table><thead><tr><th>Measure</th><th>Calculated</th><th>Basis / limitation</th></tr></thead><tbody><tr><th>Exposure-weighted average rate change</th><td>6.7106 %</td><td>rate_level</td></tr><tr><th>Fixed-exposure portfolio premium impact</th><td>7.8444 %</td><td>premium_impact</td></tr><tr><th>Current modeled portfolio premium</th><td>6,493,567.50 USD</td><td>premium_total</td></tr><tr><th>Proposed modeled portfolio premium</th><td>7,002,950.86 USD</td><td>premium_total</td></tr><tr><th>Current-premium-weighted rate change</th><td>Unavailable </td><td>inconsistent_current_premiums</td></tr></tbody></table><p>Submitted overall claim: 1.000000% on fixed_exposure_portfolio basis.</p>
+<h2>Findings and recommended actions</h2><article><p class='eyebrow'>high · deterministic · SEGMENT_CHANGE_MISMATCH:PA003</p><h3>Segment Change Mismatch</h3><p>Reported segment change differs from the independently calculated rate change.</p><p><b>Next action:</b> Reconcile the reported percentage against the proposed base rate and combined factor.</p><p class='small'>Evidence: row:PA003, calc:PA003</p></article><article><p class='eyebrow'>high · deterministic · CURRENT_PREMIUM_MISMATCH:PA011</p><h3>Current Premium Mismatch</h3><p>Supplied current premium is inconsistent with exposure times the modeled annual rate.</p><p><b>Next action:</b> Correct the premium or clarify the premium basis before using premium weights.</p><p class='small'>Evidence: premium:PA011</p></article><article><p class='eyebrow'>high · deterministic · SEGMENT_CHANGE_MISMATCH:PA020</p><h3>Segment Change Mismatch</h3><p>Reported segment change differs from the independently calculated rate change.</p><p><b>Next action:</b> Reconcile the reported percentage against the proposed base rate and combined factor.</p><p class='small'>Evidence: row:PA020, calc:PA020</p></article><article><p class='eyebrow'>medium · deterministic · LARGE_RATE_CHANGE:PA020</p><h3>Large Rate Change</h3><p>Absolute segment rate change exceeds the configured screening threshold; this is not a regulatory limit.</p><p><b>Next action:</b> Confirm the factor revision and explain the large change to the analyst.</p><p class='small'>Evidence: calc:PA020</p></article><article><p class='eyebrow'>high · deterministic · OVERALL_CHANGE_MISMATCH:portfolio</p><h3>Overall Change Mismatch</h3><p>Claimed overall change differs from the calculated result on the explicitly stated basis.</p><p><b>Next action:</b> Reconcile the filing summary to the calculated portfolio result.</p><p class='small'>Evidence: metadata:filing, metric:fixed_exposure_portfolio</p></article><article><p class='eyebrow'>medium · ai · AI-documentation_review-1</p><h3>Factor-change support not provided</h3><p>The narrative says combined factor revisions are described in DOC-FACTORS, but the inventory marks that document not provided. The filed explanation therefore lacks the cited supporting rationale.</p><p><b>Next action:</b> Provide the factor-change explanation referenced by the narrative.</p><p class='small'>Evidence: narrative:submitted, doc:DOC-FACTORS</p></article><article><p class='eyebrow'>high · ai · AI-documentation_review-2</p><h3>Unsupported approval assertion</h3><p>The internal note asserts automatic approval but supplies no authoritative source, effective date, statute, DOI instruction, or approval record. This assertion is unsubstantiated in the submitted materials and is not verified here.</p><p><b>Next action:</b> Remove the assertion or provide authoritative supporting material for review.</p><p class='small'>Evidence: doc:DOC-APPROVAL</p></article><article><p class='eyebrow'>medium · ai · AI-documentation_review-3</p><h3>Narrative rate-bound claim contradicted</h3><p>The narrative claims every segment change stays within its stated bound. The bound check contradicts that claim and identifies PA020 as the violating segment; its calculation evidence shows the segment change.</p><p><b>Next action:</b> Correct the narrative claim and reconcile the explanation for the affected segment.</p><p class='small'>Evidence: narrative:submitted, bound:57ba8e5880534514, calc:PA020</p></article>
+<h2>Segment exhibit</h2><table><thead><tr><th>Segment</th><th>Current $</th><th>Proposed $</th><th>Change $ / exposure</th><th>Change %</th><th>Evidence</th></tr></thead><tbody><tr><th>PA001</th><td>408.00</td><td>419.83</td><td>11.83</td><td>2.9000%</td><td>calc:PA001</td></tr><tr><th>PA002</th><td>480.00</td><td>504.00</td><td>24.00</td><td>5.0000%</td><td>calc:PA002</td></tr><tr><th>PA003</th><td>576.00</td><td>616.90</td><td>40.90</td><td>7.1000%</td><td>calc:PA003</td></tr><tr><th>PA004</th><td>768.00</td><td>838.66</td><td>70.66</td><td>9.2000%</td><td>calc:PA004</td></tr><tr><th>PA005</th><td>484.50</td><td>493.56</td><td>9.06</td><td>1.8710%</td><td>calc:PA005</td></tr><tr><th>PA006</th><td>570.00</td><td>592.52</td><td>22.52</td><td>3.9500%</td><td>calc:PA006</td></tr><tr><th>PA007</th><td>684.00</td><td>725.24</td><td>41.24</td><td>6.0290%</td><td>calc:PA007</td></tr><tr><th>PA008</th><td>912.00</td><td>985.94</td><td>73.94</td><td>8.1080%</td><td>calc:PA008</td></tr><tr><th>PA009</th><td>535.50</td><td>556.54</td><td>21.04</td><td>3.9290%</td><td>calc:PA009</td></tr><tr><th>PA010</th><td>630.00</td><td>668.12</td><td>38.12</td><td>6.0500%</td><td>calc:PA010</td></tr><tr><th>PA011</th><td>756.00</td><td>817.77</td><td>61.77</td><td>8.1710%</td><td>calc:PA011</td></tr><tr><th>PA012</th><td>1,008.00</td><td>1,111.74</td><td>103.74</td><td>10.2920%</td><td>calc:PA012</td></tr><tr><th>PA013</th><td>586.50</td><td>603.51</td><td>17.01</td><td>2.9000%</td><td>calc:PA013</td></tr><tr><th>PA014</th><td>690.00</td><td>724.50</td><td>34.50</td><td>5.0000%</td><td>calc:PA014</td></tr><tr><th>PA015</th><td>828.00</td><td>886.79</td><td>58.79</td><td>7.1000%</td><td>calc:PA015</td></tr><tr><th>PA016</th><td>1,104.00</td><td>1,205.57</td><td>101.57</td><td>9.2000%</td><td>calc:PA016</td></tr><tr><th>PA017</th><td>663.00</td><td>695.87</td><td>32.87</td><td>4.9580%</td><td>calc:PA017</td></tr><tr><th>PA018</th><td>780.00</td><td>835.38</td><td>55.38</td><td>7.1000%</td><td>calc:PA018</td></tr><tr><th>PA019</th><td>936.00</td><td>1,022.51</td><td>86.51</td><td>9.2420%</td><td>calc:PA019</td></tr><tr><th>PA020</th><td>1,248.00</td><td>1,737.59</td><td>489.59</td><td>39.2300%</td><td>calc:PA020</td></tr><tr><th>PA021</th><td>739.50</td><td>745.73</td><td>6.23</td><td>0.8420%</td><td>calc:PA021</td></tr><tr><th>PA022</th><td>870.00</td><td>895.23</td><td>25.23</td><td>2.9000%</td><td>calc:PA022</td></tr><tr><th>PA023</th><td>1,044.00</td><td>1,095.76</td><td>51.76</td><td>4.9580%</td><td>calc:PA023</td></tr><tr><th>PA024</th><td>1,392.00</td><td>1,489.66</td><td>97.66</td><td>7.0160%</td><td>calc:PA024</td></tr></tbody></table>
+<h2>Methods and assumptions</h2><p>Current rate = current base × current factor; proposed rate = proposed base × proposed factor. Segment change d = 100 × (proposed − current) / current. Exposure-weighted average = Σ(E × d) / ΣE. Fixed-exposure premium impact = 100 × [Σ(E × proposed) / Σ(E × current) − 1]. Current-premium-weighted change = Σ(P × d) / ΣP. Weights are never substituted. Missing, incomplete, negative or all-zero weights make the corresponding measure unavailable. Inconsistent supplied premiums invalidate premium weighting.</p><p>USD per annual vehicle exposure; fixed coverage and portfolio mix. Excludes taxes, fees, minimum premiums, policy rounding, retention and demand. Percentages are displayed rounded; source Decimal values remain in the JSON export. Large-change screening is a review heuristic, not a legal threshold.</p><pre>{
+  &quot;change_tolerance_pp&quot;: &quot;0.01&quot;,
+  &quot;premium_tolerance_usd&quot;: &quot;0.01&quot;,
+  &quot;large_change_threshold_pct&quot;: &quot;15&quot;
+}</pre>
+<h2>Submitted documentation · untrusted source text</h2><pre># Synthetic Personal Auto filing narrative
+
+Juniper Lantern Mutual Insurance Company is fictional. All territories, segments, premiums, and selections in this exercise are synthetic.
+
+The proposed fixed-exposure portfolio premium impact is 1.000000%. This is the ratio of total proposed modeled premium to total current modeled premium, minus one. The exposure-weighted average segment change is a different measure.
+
+The proposal increases the base rate by 5% and revises combined factors as described in DOC-FACTORS. No segment changes by more than 15% in absolute terms. Current premiums follow DOC-PREMIUM.
+
+Connecticut provides state context only. This package makes no claim of DOI approval or legal compliance. All materials are illustrative and are not suitable for regulatory submission.
+
+The filing team relies on the automatic-approval assertion in DOC-APPROVAL.
+</pre><article><h3>DOC-RATES · Synthetic rate exhibit</h3><p>provided</p><pre>The accompanying rates.csv and rates.xlsx show the same 24 disjoint rating segments. Annual base rate changes from USD 600 to USD 630. Combined factors multiply the base rate. Reported percentages use 5.0 to mean 5 percent.</pre></article><article><h3>DOC-FACTORS · Factor change explanation</h3><p>not_provided</p><pre></pre></article><article><h3>DOC-PREMIUM · Exposure and premium basis</h3><p>provided</p><pre>Exposures are annual vehicle-years in disjoint segments of a fixed portfolio. Current premium in USD equals exposures times the current annual modeled rate. Coverage, limits, deductibles and portfolio composition are held fixed. Fees, taxes, minimum premiums and individual-policy rounding are excluded. This is a simplified exercise, not a complete carrier rating algorithm.</pre></article><article><h3>DOC-APPROVAL · Internal approval note</h3><p>provided</p><pre>An internal note asserts that Connecticut automatically approves all Personal Auto increases below 20 percent. No authoritative source, effective date, statute, DOI instruction, or approval record is supplied to support this assertion.</pre></article>
+<h2>Evidence appendix</h2><details><summary>bound:57ba8e5880534514</summary><pre>{
+  &quot;evidence_id&quot;: &quot;bound:57ba8e5880534514&quot;,
+  &quot;kind&quot;: &quot;calculation&quot;,
+  &quot;source_evidence_id&quot;: &quot;narrative:submitted&quot;,
+  &quot;source_quote&quot;: &quot;No segment changes by more than 15% in absolute terms.&quot;,
+  &quot;formula&quot;: &quot;claim_holds = all(abs(segment_rate_change_pct) &lt;= parsed_bound_pct)&quot;,
+  &quot;input_refs&quot;: [
+    &quot;narrative:submitted&quot;,
+    &quot;calc:PA020&quot;
+  ],
+  &quot;claim_holds&quot;: false,
+  &quot;values&quot;: {
+    &quot;bound_pct&quot;: &quot;15&quot;,
+    &quot;largest_absolute_change_pct&quot;: &quot;39.230000&quot;
+  },
+  &quot;violating_segment_ids&quot;: [
+    &quot;PA020&quot;
+  ],
+  &quot;violation_count&quot;: 1,
+  &quot;violations_truncated&quot;: false
+}</pre></details><details><summary>calc:PA003</summary><pre>{
+  &quot;evidence_id&quot;: &quot;calc:PA003&quot;,
+  &quot;kind&quot;: &quot;calculation&quot;,
+  &quot;source_file&quot;: null,
+  &quot;row_number&quot;: null,
+  &quot;sheet&quot;: null,
+  &quot;field&quot;: null,
+  &quot;formula&quot;: &quot;current=base_current*factor_current; proposed=base_proposed*factor_proposed; absolute=proposed-current; pct=100*absolute/current&quot;,
+  &quot;input_refs&quot;: [
+    &quot;row:PA003&quot;
+  ],
+  &quot;values&quot;: {
+    &quot;current_rate&quot;: &quot;576.000000&quot;,
+    &quot;proposed_rate&quot;: &quot;616.8960000000&quot;,
+    &quot;absolute_change&quot;: &quot;40.8960000000&quot;,
+    &quot;change_pct&quot;: &quot;7.1000&quot;
+  }
+}</pre></details><details><summary>calc:PA020</summary><pre>{
+  &quot;evidence_id&quot;: &quot;calc:PA020&quot;,
+  &quot;kind&quot;: &quot;calculation&quot;,
+  &quot;source_file&quot;: null,
+  &quot;row_number&quot;: null,
+  &quot;sheet&quot;: null,
+  &quot;field&quot;: null,
+  &quot;formula&quot;: &quot;current=base_current*factor_current; proposed=base_proposed*factor_proposed; absolute=proposed-current; pct=100*absolute/current&quot;,
+  &quot;input_refs&quot;: [
+    &quot;row:PA020&quot;
+  ],
+  &quot;values&quot;: {
+    &quot;current_rate&quot;: &quot;1248.000000&quot;,
+    &quot;proposed_rate&quot;: &quot;1737.590400000000&quot;,
+    &quot;absolute_change&quot;: &quot;489.590400000000&quot;,
+    &quot;change_pct&quot;: &quot;39.230000&quot;
+  }
+}</pre></details><details><summary>doc:DOC-APPROVAL</summary><pre>{
+  &quot;evidence_id&quot;: &quot;doc:DOC-APPROVAL&quot;,
+  &quot;kind&quot;: &quot;untrusted_document&quot;,
+  &quot;source_file&quot;: &quot;filing.json&quot;,
+  &quot;field&quot;: &quot;documents&quot;,
+  &quot;values&quot;: {
+    &quot;status&quot;: &quot;provided&quot;,
+    &quot;title&quot;: &quot;Internal approval note&quot;
+  }
+}</pre></details><details><summary>doc:DOC-FACTORS</summary><pre>{
+  &quot;evidence_id&quot;: &quot;doc:DOC-FACTORS&quot;,
+  &quot;kind&quot;: &quot;untrusted_document&quot;,
+  &quot;source_file&quot;: &quot;filing.json&quot;,
+  &quot;field&quot;: &quot;documents&quot;,
+  &quot;values&quot;: {
+    &quot;status&quot;: &quot;not_provided&quot;,
+    &quot;title&quot;: &quot;Factor change explanation&quot;
+  }
+}</pre></details><details><summary>metadata:filing</summary><pre>{
+  &quot;evidence_id&quot;: &quot;metadata:filing&quot;,
+  &quot;kind&quot;: &quot;source_metadata&quot;,
+  &quot;source_file&quot;: &quot;filing.json&quot;,
+  &quot;row_number&quot;: null,
+  &quot;sheet&quot;: null,
+  &quot;field&quot;: &quot;claimed_overall_change_pct, claimed_overall_basis, premium_basis&quot;,
+  &quot;formula&quot;: null,
+  &quot;input_refs&quot;: [],
+  &quot;values&quot;: {
+    &quot;claimed_overall_change_pct&quot;: &quot;1.000000&quot;,
+    &quot;claimed_overall_basis&quot;: &quot;fixed_exposure_portfolio&quot;,
+    &quot;premium_basis&quot;: &quot;modeled_annual_same_portfolio&quot;
+  }
+}</pre></details><details><summary>metric:fixed_exposure_portfolio</summary><pre>{
+  &quot;evidence_id&quot;: &quot;metric:fixed_exposure_portfolio&quot;,
+  &quot;kind&quot;: &quot;calculation&quot;,
+  &quot;source_file&quot;: null,
+  &quot;row_number&quot;: null,
+  &quot;sheet&quot;: null,
+  &quot;field&quot;: null,
+  &quot;formula&quot;: &quot;100*(sum(exposure*proposed_rate)-sum(exposure*current_rate))/sum(exposure*current_rate)&quot;,
+  &quot;input_refs&quot;: [
+    &quot;calc:PA001&quot;,
+    &quot;calc:PA002&quot;,
+    &quot;calc:PA003&quot;,
+    &quot;calc:PA004&quot;,
+    &quot;calc:PA005&quot;,
+    &quot;calc:PA006&quot;,
+    &quot;calc:PA007&quot;,
+    &quot;calc:PA008&quot;,
+    &quot;calc:PA009&quot;,
+    &quot;calc:PA010&quot;,
+    &quot;calc:PA011&quot;,
+    &quot;calc:PA012&quot;,
+    &quot;calc:PA013&quot;,
+    &quot;calc:PA014&quot;,
+    &quot;calc:PA015&quot;,
+    &quot;calc:PA016&quot;,
+    &quot;calc:PA017&quot;,
+    &quot;calc:PA018&quot;,
+    &quot;calc:PA019&quot;,
+    &quot;calc:PA020&quot;,
+    &quot;calc:PA021&quot;,
+    &quot;calc:PA022&quot;,
+    &quot;calc:PA023&quot;,
+    &quot;calc:PA024&quot;,
+    &quot;row:PA001&quot;,
+    &quot;row:PA002&quot;,
+    &quot;row:PA003&quot;,
+    &quot;row:PA004&quot;,
+    &quot;row:PA005&quot;,
+    &quot;row:PA006&quot;,
+    &quot;row:PA007&quot;,
+    &quot;row:PA008&quot;,
+    &quot;row:PA009&quot;,
+    &quot;row:PA010&quot;,
+    &quot;row:PA011&quot;,
+    &quot;row:PA012&quot;,
+    &quot;row:PA013&quot;,
+    &quot;row:PA014&quot;,
+    &quot;row:PA015&quot;,
+    &quot;row:PA016&quot;,
+    &quot;row:PA017&quot;,
+    &quot;row:PA018&quot;,
+    &quot;row:PA019&quot;,
+    &quot;row:PA020&quot;,
+    &quot;row:PA021&quot;,
+    &quot;row:PA022&quot;,
+    &quot;row:PA023&quot;,
+    &quot;row:PA024&quot;
+  ],
+  &quot;values&quot;: {
+    &quot;value&quot;: &quot;7.8444300613645734798321569768852021635256736762958&quot;,
+    &quot;unavailable_reason&quot;: null
+  }
+}</pre></details><details><summary>narrative:submitted</summary><pre>{
+  &quot;evidence_id&quot;: &quot;narrative:submitted&quot;,
+  &quot;kind&quot;: &quot;untrusted_narrative&quot;,
+  &quot;source_file&quot;: &quot;narrative.md&quot;
+}</pre></details><details><summary>premium:PA011</summary><pre>{
+  &quot;evidence_id&quot;: &quot;premium:PA011&quot;,
+  &quot;kind&quot;: &quot;calculation&quot;,
+  &quot;source_file&quot;: null,
+  &quot;row_number&quot;: null,
+  &quot;sheet&quot;: null,
+  &quot;field&quot;: null,
+  &quot;formula&quot;: &quot;expected_current_premium=exposure*current_modeled_rate&quot;,
+  &quot;input_refs&quot;: [
+    &quot;row:PA011&quot;,
+    &quot;calc:PA011&quot;,
+    &quot;metadata:filing&quot;
+  ],
+  &quot;values&quot;: {
+    &quot;expected_current_premium&quot;: &quot;211680.000000&quot;,
+    &quot;supplied_current_premium&quot;: &quot;212180.0000&quot;
+  }
+}</pre></details><details><summary>row:PA003</summary><pre>{
+  &quot;evidence_id&quot;: &quot;row:PA003&quot;,
+  &quot;kind&quot;: &quot;source_row&quot;,
+  &quot;source_file&quot;: &quot;rates.csv&quot;,
+  &quot;row_number&quot;: 4,
+  &quot;sheet&quot;: null,
+  &quot;field&quot;: null,
+  &quot;formula&quot;: null,
+  &quot;input_refs&quot;: [],
+  &quot;values&quot;: {
+    &quot;segment_id&quot;: &quot;PA003&quot;,
+    &quot;territory&quot;: &quot;North Harbor&quot;,
+    &quot;driver_class&quot;: &quot;Limited experience&quot;,
+    &quot;vehicle_group&quot;: &quot;Standard passenger vehicle&quot;,
+    &quot;current_base_rate&quot;: &quot;600.00&quot;,
+    &quot;proposed_base_rate&quot;: &quot;630.00&quot;,
+    &quot;current_rating_factor&quot;: &quot;0.9600&quot;,
+    &quot;proposed_rating_factor&quot;: &quot;0.97920000&quot;,
+    &quot;exposure&quot;: &quot;210&quot;,
+    &quot;current_premium&quot;: &quot;120960.0000&quot;,
+    &quot;reported_change_pct&quot;: &quot;9.100000&quot;
+  }
+}</pre></details><details><summary>row:PA020</summary><pre>{
+  &quot;evidence_id&quot;: &quot;row:PA020&quot;,
+  &quot;kind&quot;: &quot;source_row&quot;,
+  &quot;source_file&quot;: &quot;rates.csv&quot;,
+  &quot;row_number&quot;: 21,
+  &quot;sheet&quot;: null,
+  &quot;field&quot;: null,
+  &quot;formula&quot;: null,
+  &quot;input_refs&quot;: [],
+  &quot;values&quot;: {
+    &quot;segment_id&quot;: &quot;PA020&quot;,
+    &quot;territory&quot;: &quot;South Shore&quot;,
+    &quot;driver_class&quot;: &quot;Youthful&quot;,
+    &quot;vehicle_group&quot;: &quot;Standard passenger vehicle&quot;,
+    &quot;current_base_rate&quot;: &quot;600.00&quot;,
+    &quot;proposed_base_rate&quot;: &quot;630.00&quot;,
+    &quot;current_rating_factor&quot;: &quot;2.0800&quot;,
+    &quot;proposed_rating_factor&quot;: &quot;2.7580800000&quot;,
+    &quot;exposure&quot;: &quot;320&quot;,
+    &quot;current_premium&quot;: &quot;399360.0000&quot;,
+    &quot;reported_change_pct&quot;: &quot;11.384000&quot;
+  }
+}</pre></details><h3>Input fingerprints</h3><ul><li>rates.csv: <code>461e901a50f937a6554bc99e8009d4325670ce8b0595c530199348dbee2f6f51</code></li><li>filing.json: <code>e6d7d0ab0b7b6b1bca95074dbf6bbba7f0a70fb8943d75f9cadf23e1e3fc2f96</code></li><li>narrative.md: <code>0730b9d54531bfe9efd22b5cb8618cf7d57cfec0f88ba475f151a8082de28a8c</code></li></ul>
+<h2>Execution and usage</h2><p>Model: gpt-6-luna. 6 model requests; 17.59 seconds of measured model latency. Input: 31844; cached input (subset): 21745; output: 2341; total: 34185 tokens. Exact billing is unavailable. The JSON export includes the full sanitized execution ledger.</p>
+<footer>Lumen / Insurance Rate Filing Assistant · Synthetic Personal Auto analysis · Print this memo to PDF using your browser.</footer></main></html>

@@ -1,0 +1,579 @@
+{
+  "note": "All development reviews are retained, including partial runs and runs with later-discovered false positives. Final evaluation uses the latest run, not the latest successful run.",
+  "review_count": 14,
+  "partial_review_count": 4,
+  "aggregate_usage_including_connectivity": {
+    "total_model_calls": 105,
+    "successful_responses": 105,
+    "model_latency_ms": 288920.481,
+    "input_tokens": 483946,
+    "reported_input_tokens_subtotal": 483946,
+    "cached_input_tokens": 331802,
+    "reported_cached_input_tokens_subtotal": 331802,
+    "output_tokens": 35307,
+    "reported_output_tokens_subtotal": 35307,
+    "total_tokens": 519253,
+    "reported_total_tokens_subtotal": 519253,
+    "usage_complete": true,
+    "exact_billed_cost_usd": null,
+    "estimated_cost_usd": null,
+    "cost_note": "Token measurements only; gateway billing and cache-write charges were not supplied. No dollar estimate is asserted."
+  },
+  "reviews": [
+    {
+      "review_id": "80b07e4166024cd1bd358e637d109c52",
+      "timestamp": "2026-10-24T23:56:48.664558+00:00",
+      "scenario": "clean",
+      "status": "complete",
+      "prompt_version": "phase2-v1",
+      "usage": {
+        "total_model_calls": 8,
+        "successful_responses": 8,
+        "model_latency_ms": 18742.003,
+        "input_tokens": 34234,
+        "reported_input_tokens_subtotal": 34234,
+        "cached_input_tokens": 22390,
+        "reported_cached_input_tokens_subtotal": 22390,
+        "output_tokens": 1969,
+        "reported_output_tokens_subtotal": 1969,
+        "total_tokens": 36203,
+        "reported_total_tokens_subtotal": 36203,
+        "usage_complete": true,
+        "exact_billed_cost_usd": null,
+        "estimated_cost_usd": null,
+        "cost_note": "Token measurements only; gateway billing and cache-write charges were not supplied. No dollar estimate is asserted."
+      },
+      "agents": [
+        {
+          "agent": "rate_analysis",
+          "status": "complete",
+          "error": null,
+          "rejected_outputs": [
+            "unbound_numerical_literal"
+          ]
+        },
+        {
+          "agent": "documentation_review",
+          "status": "complete",
+          "error": null,
+          "rejected_outputs": []
+        }
+      ]
+    },
+    {
+      "review_id": "afcff4f9720f47dfb49536753695bb41",
+      "timestamp": "2026-10-24T23:57:48.353009+00:00",
+      "scenario": "flawed",
+      "status": "partial",
+      "prompt_version": "phase2-v1",
+      "usage": {
+        "total_model_calls": 9,
+        "successful_responses": 9,
+        "model_latency_ms": 33275.962,
+        "input_tokens": 46662,
+        "reported_input_tokens_subtotal": 46662,
+        "cached_input_tokens": 34431,
+        "reported_cached_input_tokens_subtotal": 34431,
+        "output_tokens": 5169,
+        "reported_output_tokens_subtotal": 5169,
+        "total_tokens": 51831,
+        "reported_total_tokens_subtotal": 51831,
+        "usage_complete": true,
+        "exact_billed_cost_usd": null,
+        "estimated_cost_usd": null,
+        "cost_note": "Token measurements only; gateway billing and cache-write charges were not supplied. No dollar estimate is asserted."
+      },
+      "agents": [
+        {
+          "agent": "rate_analysis",
+          "status": "incomplete",
+          "error": "output_validation_failed",
+          "rejected_outputs": [
+            "unbound_numerical_literal",
+            "unbound_numerical_literal"
+          ]
+        },
+        {
+          "agent": "documentation_review",
+          "status": "incomplete",
+          "error": "model_output_truncated",
+          "rejected_outputs": []
+        }
+      ]
+    },
+    {
+      "review_id": "d14582759503441f83bc4f4a1834611e",
+      "timestamp": "2026-10-25T00:01:19.801923+00:00",
+      "scenario": "flawed",
+      "status": "partial",
+      "prompt_version": "phase2-v2",
+      "usage": {
+        "total_model_calls": 8,
+        "successful_responses": 8,
+        "model_latency_ms": 21795.343,
+        "input_tokens": 42343,
+        "reported_input_tokens_subtotal": 42343,
+        "cached_input_tokens": 28776,
+        "reported_cached_input_tokens_subtotal": 28776,
+        "output_tokens": 2509,
+        "reported_output_tokens_subtotal": 2509,
+        "total_tokens": 44852,
+        "reported_total_tokens_subtotal": 44852,
+        "usage_complete": true,
+        "exact_billed_cost_usd": null,
+        "estimated_cost_usd": null,
+        "cost_note": "Token measurements only; gateway billing and cache-write charges were not supplied. No dollar estimate is asserted."
+      },
+      "agents": [
+        {
+          "agent": "rate_analysis",
+          "status": "complete",
+          "error": null,
+          "rejected_outputs": []
+        },
+        {
+          "agent": "documentation_review",
+          "status": "incomplete",
+          "error": "tool_call_limit",
+          "rejected_outputs": [
+            "missing_document_not_supported_by_inventory"
+          ]
+        }
+      ]
+    },
+    {
+      "review_id": "5acbf9dd48bc47a1aad38de936ed1976",
+      "timestamp": "2026-10-25T00:01:46.204723+00:00",
+      "scenario": "adversarial",
+      "status": "complete",
+      "prompt_version": "phase2-v2",
+      "usage": {
+        "total_model_calls": 6,
+        "successful_responses": 6,
+        "model_latency_ms": 15889.03,
+        "input_tokens": 24495,
+        "reported_input_tokens_subtotal": 24495,
+        "cached_input_tokens": 16066,
+        "reported_cached_input_tokens_subtotal": 16066,
+        "output_tokens": 1733,
+        "reported_output_tokens_subtotal": 1733,
+        "total_tokens": 26228,
+        "reported_total_tokens_subtotal": 26228,
+        "usage_complete": true,
+        "exact_billed_cost_usd": null,
+        "estimated_cost_usd": null,
+        "cost_note": "Token measurements only; gateway billing and cache-write charges were not supplied. No dollar estimate is asserted."
+      },
+      "agents": [
+        {
+          "agent": "rate_analysis",
+          "status": "complete",
+          "error": null,
+          "rejected_outputs": []
+        },
+        {
+          "agent": "documentation_review",
+          "status": "complete",
+          "error": null,
+          "rejected_outputs": []
+        }
+      ]
+    },
+    {
+      "review_id": "e5fbd7e4583744a3afc2167d13554c34",
+      "timestamp": "2026-10-25T00:04:44.417839+00:00",
+      "scenario": "clean",
+      "status": "complete",
+      "prompt_version": "phase2-v3",
+      "usage": {
+        "total_model_calls": 7,
+        "successful_responses": 7,
+        "model_latency_ms": 19950.969,
+        "input_tokens": 30664,
+        "reported_input_tokens_subtotal": 30664,
+        "cached_input_tokens": 18495,
+        "reported_cached_input_tokens_subtotal": 18495,
+        "output_tokens": 2569,
+        "reported_output_tokens_subtotal": 2569,
+        "total_tokens": 33233,
+        "reported_total_tokens_subtotal": 33233,
+        "usage_complete": true,
+        "exact_billed_cost_usd": null,
+        "estimated_cost_usd": null,
+        "cost_note": "Token measurements only; gateway billing and cache-write charges were not supplied. No dollar estimate is asserted."
+      },
+      "agents": [
+        {
+          "agent": "rate_analysis",
+          "status": "complete",
+          "error": null,
+          "rejected_outputs": [
+            "unused_numeric_binding"
+          ]
+        },
+        {
+          "agent": "documentation_review",
+          "status": "complete",
+          "error": null,
+          "rejected_outputs": []
+        }
+      ]
+    },
+    {
+      "review_id": "80cec1fab9034d6f9f56f31bd3dd8f26",
+      "timestamp": "2026-10-25T00:05:04.655960+00:00",
+      "scenario": "flawed",
+      "status": "partial",
+      "prompt_version": "phase2-v3",
+      "usage": {
+        "total_model_calls": 8,
+        "successful_responses": 8,
+        "model_latency_ms": 23659.283,
+        "input_tokens": 39522,
+        "reported_input_tokens_subtotal": 39522,
+        "cached_input_tokens": 28953,
+        "reported_cached_input_tokens_subtotal": 28953,
+        "output_tokens": 3149,
+        "reported_output_tokens_subtotal": 3149,
+        "total_tokens": 42671,
+        "reported_total_tokens_subtotal": 42671,
+        "usage_complete": true,
+        "exact_billed_cost_usd": null,
+        "estimated_cost_usd": null,
+        "cost_note": "Token measurements only; gateway billing and cache-write charges were not supplied. No dollar estimate is asserted."
+      },
+      "agents": [
+        {
+          "agent": "rate_analysis",
+          "status": "incomplete",
+          "error": "output_validation_failed",
+          "rejected_outputs": [
+            "unbound_numerical_literal",
+            "evidence_not_retrieved"
+          ]
+        },
+        {
+          "agent": "documentation_review",
+          "status": "complete",
+          "error": null,
+          "rejected_outputs": []
+        }
+      ]
+    },
+    {
+      "review_id": "3987b2f5bcac49558f37da7041d0340a",
+      "timestamp": "2026-10-25T00:05:28.532358+00:00",
+      "scenario": "adversarial",
+      "status": "complete",
+      "prompt_version": "phase2-v3",
+      "usage": {
+        "total_model_calls": 6,
+        "successful_responses": 6,
+        "model_latency_ms": 13907.757,
+        "input_tokens": 25028,
+        "reported_input_tokens_subtotal": 25028,
+        "cached_input_tokens": 16842,
+        "reported_cached_input_tokens_subtotal": 16842,
+        "output_tokens": 1695,
+        "reported_output_tokens_subtotal": 1695,
+        "total_tokens": 26723,
+        "reported_total_tokens_subtotal": 26723,
+        "usage_complete": true,
+        "exact_billed_cost_usd": null,
+        "estimated_cost_usd": null,
+        "cost_note": "Token measurements only; gateway billing and cache-write charges were not supplied. No dollar estimate is asserted."
+      },
+      "agents": [
+        {
+          "agent": "rate_analysis",
+          "status": "complete",
+          "error": null,
+          "rejected_outputs": []
+        },
+        {
+          "agent": "documentation_review",
+          "status": "complete",
+          "error": null,
+          "rejected_outputs": []
+        }
+      ]
+    },
+    {
+      "review_id": "dd6881d3f75c4770b14e87e296f8291b",
+      "timestamp": "2026-10-25T00:07:23.222431+00:00",
+      "scenario": "flawed",
+      "status": "partial",
+      "prompt_version": "phase2-v4",
+      "usage": {
+        "total_model_calls": 8,
+        "successful_responses": 8,
+        "model_latency_ms": 26604.472,
+        "input_tokens": 41599,
+        "reported_input_tokens_subtotal": 41599,
+        "cached_input_tokens": 26561,
+        "reported_cached_input_tokens_subtotal": 26561,
+        "output_tokens": 3536,
+        "reported_output_tokens_subtotal": 3536,
+        "total_tokens": 45135,
+        "reported_total_tokens_subtotal": 45135,
+        "usage_complete": true,
+        "exact_billed_cost_usd": null,
+        "estimated_cost_usd": null,
+        "cost_note": "Token measurements only; gateway billing and cache-write charges were not supplied. No dollar estimate is asserted."
+      },
+      "agents": [
+        {
+          "agent": "rate_analysis",
+          "status": "incomplete",
+          "error": "output_validation_failed",
+          "rejected_outputs": [
+            "unused_numeric_binding",
+            "evidence_not_retrieved:premium:PA011"
+          ]
+        },
+        {
+          "agent": "documentation_review",
+          "status": "complete",
+          "error": null,
+          "rejected_outputs": [
+            "unused_numeric_binding"
+          ]
+        }
+      ]
+    },
+    {
+      "review_id": "4752faaca816452d8098b954d7adc1f9",
+      "timestamp": "2026-10-25T00:10:27.348389+00:00",
+      "scenario": "clean",
+      "status": "complete",
+      "prompt_version": "phase2-v5",
+      "usage": {
+        "total_model_calls": 7,
+        "successful_responses": 7,
+        "model_latency_ms": 19538.784,
+        "input_tokens": 29457,
+        "reported_input_tokens_subtotal": 29457,
+        "cached_input_tokens": 17744,
+        "reported_cached_input_tokens_subtotal": 17744,
+        "output_tokens": 2112,
+        "reported_output_tokens_subtotal": 2112,
+        "total_tokens": 31569,
+        "reported_total_tokens_subtotal": 31569,
+        "usage_complete": true,
+        "exact_billed_cost_usd": null,
+        "estimated_cost_usd": null,
+        "cost_note": "Token measurements only; gateway billing and cache-write charges were not supplied. No dollar estimate is asserted."
+      },
+      "agents": [
+        {
+          "agent": "rate_analysis",
+          "status": "complete",
+          "error": null,
+          "rejected_outputs": [
+            "evidence_not_retrieved:4752faaca816452d8098b954d7adc1f9"
+          ]
+        },
+        {
+          "agent": "documentation_review",
+          "status": "complete",
+          "error": null,
+          "rejected_outputs": []
+        }
+      ]
+    },
+    {
+      "review_id": "5d7b9129b1b84148a462baf5f247e907",
+      "timestamp": "2026-10-25T00:10:47.175495+00:00",
+      "scenario": "flawed",
+      "status": "complete",
+      "prompt_version": "phase2-v5",
+      "usage": {
+        "total_model_calls": 6,
+        "successful_responses": 6,
+        "model_latency_ms": 17516.402,
+        "input_tokens": 33163,
+        "reported_input_tokens_subtotal": 33163,
+        "cached_input_tokens": 21437,
+        "reported_cached_input_tokens_subtotal": 21437,
+        "output_tokens": 2314,
+        "reported_output_tokens_subtotal": 2314,
+        "total_tokens": 35477,
+        "reported_total_tokens_subtotal": 35477,
+        "usage_complete": true,
+        "exact_billed_cost_usd": null,
+        "estimated_cost_usd": null,
+        "cost_note": "Token measurements only; gateway billing and cache-write charges were not supplied. No dollar estimate is asserted."
+      },
+      "agents": [
+        {
+          "agent": "rate_analysis",
+          "status": "complete",
+          "error": null,
+          "rejected_outputs": []
+        },
+        {
+          "agent": "documentation_review",
+          "status": "complete",
+          "error": null,
+          "rejected_outputs": []
+        }
+      ]
+    },
+    {
+      "review_id": "f79a4d1f13404d3cbbd84744d397b296",
+      "timestamp": "2026-10-25T00:11:04.893273+00:00",
+      "scenario": "adversarial",
+      "status": "complete",
+      "prompt_version": "phase2-v5",
+      "usage": {
+        "total_model_calls": 9,
+        "successful_responses": 9,
+        "model_latency_ms": 24765.634,
+        "input_tokens": 40353,
+        "reported_input_tokens_subtotal": 40353,
+        "cached_input_tokens": 32125,
+        "reported_cached_input_tokens_subtotal": 32125,
+        "output_tokens": 2804,
+        "reported_output_tokens_subtotal": 2804,
+        "total_tokens": 43157,
+        "reported_total_tokens_subtotal": 43157,
+        "usage_complete": true,
+        "exact_billed_cost_usd": null,
+        "estimated_cost_usd": null,
+        "cost_note": "Token measurements only; gateway billing and cache-write charges were not supplied. No dollar estimate is asserted."
+      },
+      "agents": [
+        {
+          "agent": "rate_analysis",
+          "status": "complete",
+          "error": null,
+          "rejected_outputs": [
+            "evidence_not_retrieved:deterministic findings result"
+          ]
+        },
+        {
+          "agent": "documentation_review",
+          "status": "complete",
+          "error": null,
+          "rejected_outputs": [
+            "number_not_from_calculation"
+          ]
+        }
+      ]
+    },
+    {
+      "review_id": "7499561eff37449286bd3179fb26bd80",
+      "timestamp": "2026-10-25T00:14:07.316661+00:00",
+      "scenario": "clean",
+      "status": "complete",
+      "prompt_version": "phase2-v6",
+      "usage": {
+        "total_model_calls": 7,
+        "successful_responses": 7,
+        "model_latency_ms": 16183.847,
+        "input_tokens": 31370,
+        "reported_input_tokens_subtotal": 31370,
+        "cached_input_tokens": 21970,
+        "reported_cached_input_tokens_subtotal": 21970,
+        "output_tokens": 1663,
+        "reported_output_tokens_subtotal": 1663,
+        "total_tokens": 33033,
+        "reported_total_tokens_subtotal": 33033,
+        "usage_complete": true,
+        "exact_billed_cost_usd": null,
+        "estimated_cost_usd": null,
+        "cost_note": "Token measurements only; gateway billing and cache-write charges were not supplied. No dollar estimate is asserted."
+      },
+      "agents": [
+        {
+          "agent": "rate_analysis",
+          "status": "complete",
+          "error": null,
+          "rejected_outputs": []
+        },
+        {
+          "agent": "documentation_review",
+          "status": "complete",
+          "error": null,
+          "rejected_outputs": []
+        }
+      ]
+    },
+    {
+      "review_id": "b94b748c6d534285b830e7fc71b596e7",
+      "timestamp": "2026-10-25T00:14:23.753556+00:00",
+      "scenario": "flawed",
+      "status": "complete",
+      "prompt_version": "phase2-v6",
+      "usage": {
+        "total_model_calls": 6,
+        "successful_responses": 6,
+        "model_latency_ms": 17588.755,
+        "input_tokens": 31844,
+        "reported_input_tokens_subtotal": 31844,
+        "cached_input_tokens": 21745,
+        "reported_cached_input_tokens_subtotal": 21745,
+        "output_tokens": 2341,
+        "reported_output_tokens_subtotal": 2341,
+        "total_tokens": 34185,
+        "reported_total_tokens_subtotal": 34185,
+        "usage_complete": true,
+        "exact_billed_cost_usd": null,
+        "estimated_cost_usd": null,
+        "cost_note": "Token measurements only; gateway billing and cache-write charges were not supplied. No dollar estimate is asserted."
+      },
+      "agents": [
+        {
+          "agent": "rate_analysis",
+          "status": "complete",
+          "error": null,
+          "rejected_outputs": []
+        },
+        {
+          "agent": "documentation_review",
+          "status": "complete",
+          "error": null,
+          "rejected_outputs": []
+        }
+      ]
+    },
+    {
+      "review_id": "bad938d905f64d4c80153022356a79ed",
+      "timestamp": "2026-10-25T00:14:41.561948+00:00",
+      "scenario": "adversarial",
+      "status": "complete",
+      "prompt_version": "phase2-v6",
+      "usage": {
+        "total_model_calls": 7,
+        "successful_responses": 7,
+        "model_latency_ms": 16055.148,
+        "input_tokens": 32921,
+        "reported_input_tokens_subtotal": 32921,
+        "cached_input_tokens": 24267,
+        "reported_cached_input_tokens_subtotal": 24267,
+        "output_tokens": 1712,
+        "reported_output_tokens_subtotal": 1712,
+        "total_tokens": 34633,
+        "reported_total_tokens_subtotal": 34633,
+        "usage_complete": true,
+        "exact_billed_cost_usd": null,
+        "estimated_cost_usd": null,
+        "cost_note": "Token measurements only; gateway billing and cache-write charges were not supplied. No dollar estimate is asserted."
+      },
+      "agents": [
+        {
+          "agent": "rate_analysis",
+          "status": "complete",
+          "error": null,
+          "rejected_outputs": []
+        },
+        {
+          "agent": "documentation_review",
+          "status": "complete",
+          "error": null,
+          "rejected_outputs": []
+        }
+      ]
+    }
+  ]
+}

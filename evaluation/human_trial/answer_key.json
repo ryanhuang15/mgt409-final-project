@@ -1,0 +1,6 @@
+{
+  "schema_version": "1.0",
+  "provenance": "Trial-only expected conditions. Keep this away from test participants until both sessions are complete.",
+  "T01": ["SEGMENT_CHANGE_MISMATCH:T01-S04", "CURRENT_PREMIUM_MISMATCH:T01-S10", "LARGE_RATE_CHANGE:T01-S07", "OVERALL_CHANGE_MISMATCH:portfolio", "missing_documentation:DOC-FACTORS", "documentation_contradiction:narrative.md"],
+  "T02": ["SEGMENT_CHANGE_MISMATCH:T02-S03", "CURRENT_PREMIUM_MISMATCH:T02-S12", "LARGE_RATE_CHANGE:T02-S09", "OVERALL_CHANGE_MISMATCH:portfolio", "missing_documentation:DOC-FACTORS", "documentation_contradiction:narrative.md"]
+}

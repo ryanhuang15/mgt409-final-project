@@ -1,0 +1,23 @@
+{
+  "name": "lumen-rate-intelligence",
+  "private": true,
+  "version": "0.3.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "lucide-react": "0.548.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "recharts": "3.3.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "@vitejs/plugin-react": "5.0.4",
+    "prettier": "3.6.2",
+    "vite": "7.1.12"
+  }
+}
