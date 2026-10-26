@@ -1,0 +1,7 @@
+# Saved review fingerprints include these original fixture bytes. Keep line endings stable across OSes.
+/data/examples/adversarial/filing.json text eol=crlf
+/data/examples/adversarial/narrative.md text eol=crlf
+/data/examples/clean/filing.json text eol=crlf
+/data/examples/clean/narrative.md text eol=crlf
+/data/examples/flawed/filing.json text eol=crlf
+/data/examples/flawed/narrative.md text eol=crlf
