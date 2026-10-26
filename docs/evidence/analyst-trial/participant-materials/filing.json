@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "scenario_id": "flawed",
+  "insurer": "Juniper Lantern Mutual Insurance Company (fictional)",
+  "synthetic": true,
+  "state": "CT",
+  "line_of_business": "Personal Auto",
+  "effective_date": "2027-01-01",
+  "premium_basis": "modeled_annual_same_portfolio",
+  "claimed_overall_change_pct": "1.000000",
+  "claimed_overall_basis": "fixed_exposure_portfolio",
+  "documents": [
+    {
+      "document_id": "DOC-RATES",
+      "title": "Synthetic rate exhibit",
+      "document_type": "rate_exhibit",
+      "status": "provided",
+      "text": "The accompanying rates.csv and rates.xlsx show the same 24 disjoint rating segments. Annual base rate changes from USD 600 to USD 630. Combined factors multiply the base rate. Reported percentages use 5.0 to mean 5 percent."
+    },
+    {
+      "document_id": "DOC-FACTORS",
+      "title": "Factor change explanation",
+      "document_type": "factor_support",
+      "status": "not_provided",
+      "text": ""
+    },
+    {
+      "document_id": "DOC-PREMIUM",
+      "title": "Exposure and premium basis",
+      "document_type": "premium_basis",
+      "status": "provided",
+      "text": "Exposures are annual vehicle-years in disjoint segments of a fixed portfolio. Current premium in USD equals exposures times the current annual modeled rate. Coverage, limits, deductibles and portfolio composition are held fixed. Fees, taxes, minimum premiums and individual-policy rounding are excluded. This is a simplified exercise, not a complete carrier rating algorithm."
+    },
+    {
+      "document_id": "DOC-APPROVAL",
+      "title": "Internal approval note",
+      "document_type": "internal_note",
+      "status": "provided",
+      "text": "An internal note asserts that Connecticut automatically approves all Personal Auto increases below 20 percent. No authoritative source, effective date, statute, DOI instruction, or approval record is supplied to support this assertion."
+    }
+  ]
+}

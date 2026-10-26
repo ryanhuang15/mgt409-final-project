@@ -1,0 +1,25 @@
+segment_id,territory,driver_class,vehicle_group,current_base_rate,proposed_base_rate,current_rating_factor,proposed_rating_factor,exposure,current_premium,reported_change_pct
+PA001,North Harbor,Mature preferred,Standard passenger vehicle,600.00,630.00,0.6800,0.66640000,300,122400.0000,2.900000
+PA002,North Harbor,Standard adult,Standard passenger vehicle,600.00,630.00,0.8000,0.80000000,360,172800.0000,5.000000
+PA003,North Harbor,Limited experience,Standard passenger vehicle,600.00,630.00,0.9600,0.97920000,210,120960.0000,9.100000
+PA004,North Harbor,Youthful,Standard passenger vehicle,600.00,630.00,1.2800,1.33120000,180,138240.0000,9.200000
+PA005,Elm Valley,Mature preferred,Standard passenger vehicle,600.00,630.00,0.8075,0.78343650,335,162307.5000,1.871000
+PA006,Elm Valley,Standard adult,Standard passenger vehicle,600.00,630.00,0.9500,0.94050000,395,225150.0000,3.950000
+PA007,Elm Valley,Limited experience,Standard passenger vehicle,600.00,630.00,1.1400,1.15117200,245,167580.0000,6.029000
+PA008,Elm Valley,Youthful,Standard passenger vehicle,600.00,630.00,1.5200,1.56499200,215,196080.0000,8.108000
+PA009,River Junction,Mature preferred,Standard passenger vehicle,600.00,630.00,0.8925,0.88339650,370,198135.0000,3.929000
+PA010,River Junction,Standard adult,Standard passenger vehicle,600.00,630.00,1.0500,1.06050000,430,270900.0000,6.050000
+PA011,River Junction,Limited experience,Standard passenger vehicle,600.00,630.00,1.2600,1.29805200,280,212180.0000,8.171000
+PA012,River Junction,Youthful,Standard passenger vehicle,600.00,630.00,1.6800,1.76467200,250,252000.0000,10.292000
+PA013,Cedar Center,Mature preferred,Standard passenger vehicle,600.00,630.00,0.9775,0.95795000,405,237532.5000,2.900000
+PA014,Cedar Center,Standard adult,Standard passenger vehicle,600.00,630.00,1.1500,1.15000000,465,320850.0000,5.000000
+PA015,Cedar Center,Limited experience,Standard passenger vehicle,600.00,630.00,1.3800,1.40760000,315,260820.0000,7.100000
+PA016,Cedar Center,Youthful,Standard passenger vehicle,600.00,630.00,1.8400,1.91360000,285,314640.0000,9.200000
+PA017,South Shore,Mature preferred,Standard passenger vehicle,600.00,630.00,1.1050,1.10455800,440,291720.0000,4.958000
+PA018,South Shore,Standard adult,Standard passenger vehicle,600.00,630.00,1.3000,1.32600000,500,390000.0000,7.100000
+PA019,South Shore,Limited experience,Standard passenger vehicle,600.00,630.00,1.5600,1.62302400,350,327600.0000,9.242000
+PA020,South Shore,Youthful,Standard passenger vehicle,600.00,630.00,2.0800,2.7580800000,320,399360.0000,11.384000
+PA021,West Ridge,Mature preferred,Standard passenger vehicle,600.00,630.00,1.2325,1.18369300,475,351262.5000,0.842000
+PA022,West Ridge,Standard adult,Standard passenger vehicle,600.00,630.00,1.4500,1.42100000,535,465450.0000,2.900000
+PA023,West Ridge,Limited experience,Standard passenger vehicle,600.00,630.00,1.7400,1.73930400,385,401940.0000,4.958000
+PA024,West Ridge,Youthful,Standard passenger vehicle,600.00,630.00,2.3200,2.36454400,355,494160.0000,7.016000

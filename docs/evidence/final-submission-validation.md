@@ -89,3 +89,27 @@ successfully on commit `2179c56520a8f47a828964b3a101400002c98f65`: offline tests
 CSV/XLSX evaluation, dependency check, and frontend production build all passed.
 The repository’s 172 file blobs were verified, forbidden runtime paths were
 absent, and the remote report/slides blob IDs matched the local files.
+
+
+## Phase 6 evaluation and analyst-trial preparation
+
+The Phase 4 H02 holdout record and aggregate were preserved. One targeted live
+post-correction H02 regression with direct OpenAI (`gpt-6-luna`, prompt
+`phase5-v1`) completed with 5 TP / 0 FP / 0 FN overall, 1 / 0 / 0 for the
+documentation agent, unchanged deterministic signatures, and no invalid evidence
+references. The former `unsupported_claim` did not recur. This single known-case
+check is not independent holdout evidence and does not establish broad accuracy.
+Token usage was 48,303 input (32,005 cached), 2,261 output, and 26.6 seconds;
+estimated standard-rate cost was $0.00308035. The preceding connectivity-failure
+attempt is separately recorded and excluded from quality scoring.
+
+A 14-minute paired manual-versus-Lumen usability kit, synthetic participant
+packet, timer, questionnaire, facilitator scoring key, and impact measurement
+plan are prepared under `docs/evidence/analyst-trial/`. The timer was exercised
+locally and exported a valid sample record; this was a tool check, not a
+participant session. No human trial result or time saving is claimed.
+
+Final local validation: 235 offline tests passed; Vite production build passed;
+Chromium loaded all embedded report images without page errors; report prints to
+12 letter pages and the self-contained presentation has 9 slides. The real timer
+was exercised in-browser and its JSON download verified.
