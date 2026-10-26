@@ -79,3 +79,13 @@ source, synthetic datasets, tests, documentation, evaluation records, report,
 slides, and reproducibility instructions. The exact repository URL was then
 added to both HTML deliverables and pushed in a follow-up commit. Both files were
 rendered locally again; no paid API evaluations were run.
+
+The first two hosted Actions runs revealed that Linux checkout converted
+fingerprinted Windows fixture files from CRLF to LF, causing saved-example
+integrity checks to reject the historical reviews. `.gitattributes` now fixes
+CRLF checkout only for those six synthetic fixture text files; stored evaluation
+JSON and fixture contents were preserved. The final hosted run completed
+successfully on commit `2179c56520a8f47a828964b3a101400002c98f65`: offline tests,
+CSV/XLSX evaluation, dependency check, and frontend production build all passed.
+The repository’s 172 file blobs were verified, forbidden runtime paths were
+absent, and the remote report/slides blob IDs matched the local files.
