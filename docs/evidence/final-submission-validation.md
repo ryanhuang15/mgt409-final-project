@@ -113,3 +113,27 @@ Final local validation: 235 offline tests passed; Vite production build passed;
 Chromium loaded all embedded report images without page errors; report prints to
 12 letter pages and the self-contained presentation has 9 slides. The real timer
 was exercised in-browser and its JSON download verified.
+
+
+## Phase 7 final deliverable review
+
+The official assignment rubric was reviewed directly. Report and slide language was
+updated to remove the stale claim that H02 had no live post-correction score and to
+reflect the project decision not to conduct a human trial. The Phase 4 holdout and
+Phase 6 targeted regression remain distinct. Direct links to the adversarial run,
+H02 comparison, official SERFF description, and OpenAI Data Analysis/model pricing
+were added to improve claim traceability. No application code or historical
+evaluation record was changed.
+
+The internal point-by-point assessment is `phase7-rubric-assessment.md`. It records
+that the rubric?s real-user impact evidence is absent by decision, and that no
+timed clean Windows clone was verified in this review. The previous Phase 6 trial
+materials remain historical planning artifacts; no participant or simulated
+results were added.
+
+Final offline validation after the Phase 7 edits: **235 tests passed**; the CSV
+and XLSX deterministic evaluations passed; `pip check` found no broken
+requirements; Vite production build passed. Chromium rendered 12 report pages and
+9 slides; all 5 report images and 4 slide images loaded from embedded data, both
+files opened without page errors or external resource requests, and slide-arrow
+navigation reached all 9 slides. No paid API evaluation was run.
